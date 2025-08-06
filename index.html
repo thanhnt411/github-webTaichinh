@@ -14,64 +14,62 @@
     <div class="main">
       <!--START Header-->
       <div class="header">
-        <div class="header__container container">
-          <div class="header__top">
-            <div class="header__logo">
-              <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
-            </div>
-
-            <!--Bọc thẻ form-->
-            <form action="">
-              <div class="header__search">
-                <div class="header__search-border">
-                  <input
-                    type="text"
-                    placeholder="Nhập từ khóa tìm kiếm"
-                    class="header__input"
-                  />
-                  <div class="header__search-box">
-                    <div class="header__search-icon">
-                      <i class="fa-solid fa-search"></i>
+        <div class="header__top-wrapper">
+          <div class="header__container container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
+              </div>
+              <form action="">
+                <div class="header__search">
+                  <div class="header__search-border">
+                    <input
+                      type="text"
+                      placeholder="Nhập từ khóa tìm kiếm"
+                      class="header__input"
+                    />
+                    <div class="header__search-box">
+                      <div class="header__search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </form>
-            <!--Bọc thẻ form-->
+              </form>
+              <div class="header__contact">
+                <div class="header__contact--left">
+                  <img
+                    src="./frontend/img/mail.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">E-MAIL</span>
+                    <a
+                      class="header__contact-link"
+                      href="mailto:thanhtien412006@gmail.com"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                </div>
 
-            <div class="header__contact">
-              <div class="header__contact--left">
-                <img
-                  src="./frontend/img/mail.png"
-                  class="header__contact-icon"
-                />
-                <div class="header__contact-text">
-                  <span class="header__contact-title">E-MAIL</span>
-                  <a
-                    class="header__contact-link"
-                    href="mailto:thanhtien412006@gmail.com"
-                    >contact@sabfa.com.vn</a
-                  >
+                <div class="header__contact--right">
+                  <img
+                    src="./frontend/img/Group.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">LIÊN HỆ</span>
+                    <a class="header__contact-link" href="tel:0868679028"
+                      >0963561906</a
+                    >
+                  </div>
                 </div>
               </div>
 
-              <div class="header__contact--right">
-                <img
-                  src="./frontend/img/Group.png"
-                  class="header__contact-icon"
-                />
-                <div class="header__contact-text">
-                  <span class="header__contact-title">LIÊN HỆ</span>
-                  <a class="header__contact-link" href="tel:0868679028"
-                    >0963561906</a
-                  >
-                </div>
+              <div class="header__ham" id="toggle">
+                <i class="fas fa-bars" id="isOpen"></i>
+                <i class="fa-solid fa-xmark" id="isClose"></i>
               </div>
-            </div>
-
-            <div class="header__ham" id="toggle">
-              <i class="fas fa-bars" id="isOpen"></i>
-              <i class="fa-solid fa-xmark" id="isClose"></i>
             </div>
           </div>
         </div>
@@ -111,6 +109,83 @@
         </div>
       </div>
       <!--END Header-->
+
+      <!--START Banner-->
+      <div class="banner swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner__background--first">
+              <div class="banner__container container">
+                <div class="banner__box">
+                  <div class="banner__text">
+                    <h1 class="banner__heading">
+                      Chuyên gia tư vấn các dịch vụ về kế toán, thuế
+                    </h1>
+                    <p class="banner__sub-heading">
+                      Nec sit non quam ut velit congue tincidunt. Enim orci sem
+                      euismod turpis tortor vel, adipiscing in purus.
+                    </p>
+                    <div class="banner__contact">
+                      <span class="banner__contact-text">LIÊN HỆ NGAY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="banner__background--second">
+              <div class="banner__container container">
+                <div class="banner__box">
+                  <div class="banner__text">
+                    <h1 class="banner__heading">
+                      Chuyên gia tư vấn các dịch vụ về kế toán, thuế
+                    </h1>
+                    <p class="banner__sub-heading">
+                      Nec sit non quam ut velit congue tincidunt. Enim orci sem
+                      euismod turpis tortor vel, adipiscing in purus.
+                    </p>
+                    <div class="banner__contact">
+                      <span class="banner__contact-text">LIÊN HỆ NGAY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="banner__background--third">
+              <div class="banner__container container">
+                <div class="banner__box--third">
+                  <div class="banner__text">
+                    <h1 class="banner__heading--top">
+                      Công ty Tư vấn quản lý tài Chính SAB
+                    </h1>
+                    <h2 class="banner__heading--bottom">
+                      Kết sức mạnh, nối thành công
+                    </h2>
+                    <p class="banner__sub-heading">
+                      Nec sit non quam ut velit congue tincidunt. Enim orci sem
+                      euismod turpis tortor vel, adipiscing in purus.
+                      Scelerisque sit mi eget sodales proin mi pellentesque eu.
+                    </p>
+                    <div class="banner__contact--third">
+                      <span class="banner__contact-text">LIÊN HỆ NGAY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+      <!--END Banner-->
 
       <!--START Content-->
       <div class="content"></div>
@@ -264,5 +339,6 @@
       <!--END Footer-->
     </div>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./frontend/js/script.js"></script>
 </html>
