@@ -189,7 +189,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination1"></div>
       </div>
       <!--END Banner-->
 
@@ -223,12 +223,27 @@
                 </div>
               </div>
               <div class="about__video">
-                <div class="about__video-box">
-                  <img
-                    class="about__video-content"
-                    src="./frontend/img/about-video-background.png"
-                    alt=""
-                  />
+                <div class="about__video-wrap">
+                  <div class="about__video-box">
+                    <img
+                      class="about__video-content"
+                      src="./frontend/img/about-video-background.png"
+                      alt=""
+                    />
+                    <div class="about__play">
+                      <div class="about__play-box">
+                        <i
+                          class="fa fa-play about__play-icon"
+                          id="video-mp4"
+                        ></i>
+                      </div>
+                      <div class="about__play-title">
+                        <p class="about__play-text">
+                          Xem video giới thiệu về chúng tôi
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <div class="about__video-background"></div>
                 </div>
                 <h2 class="about__video-title">THE SKY'S THE LIMIT</h2>
@@ -349,22 +364,44 @@
               <div class="content__sub-heading">Các khóa đào tạo của SAB</div>
               <div class="content__underline"></div>
 
-              <div class="training__content swiper">
-                <div class="training__slide-wrapper">
-                  <div class="training__slide">Slide 1</div>
-                  <div class="training__slide">Slide 2</div>
-                  <div class="training__slide">Slide 3</div>
-                  <div class="training__slide">Slide 4</div>
+              <div class="training__content swiper mySwiper-training">
+                <div class="training__wrapper swiper-wrapper">
+                  <div class="training__slide swiper-slide">
+                    Kế toán thực hành Excel
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kế toán chuyên sâu
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kế toán tổng hợp
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kiểm toán NB/KSNB
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kế toán thực hành Excel
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kế toán chuyên sâu
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kế toán tổng hợp
+                  </div>
+                  <div class="training__slide swiper-slide">
+                    Kiểm toán NB/KSNB
+                  </div>
                 </div>
-                <!--
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                -->
+                <div class="swiper-button-next swiper-button-next3"></div>
+                <div class="swiper-button-prev swiper-button-prev3"></div>
               </div>
 
               <div class="training__box">
                 <div class="training__background">
-                  <img src="./frontend/img/training-background.png" alt="" />
+                  <img
+                    class="training__img"
+                    src="./frontend/img/training-background.png"
+                    alt=""
+                  />
                 </div>
                 <div class="training__info">
                   <h3 class="content__title">Kế toán chuyên sâu</h3>
@@ -457,7 +494,7 @@
             <div class="content__heading">FEEDBACK</div>
             <div class="content__sub-heading">Khách hàng nói gì về SAB</div>
             <div class="content__underline"></div>
-            <div class="feedback__box swiper mySwiper">
+            <div class="feedback__box swiper mySwiper-feedback">
               <div class="feedback__wrapper swiper-wrapper">
                 <div class="feedback__slide swiper-slide">
                   <div class="feedback__slide-box">
@@ -563,9 +600,9 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next swiper-button-next2"></div>
+              <div class="swiper-button-prev swiper-button-prev2"></div>
+              <div class="swiper-pagination swiper-pagination2"></div>
             </div>
           </div>
         </div>
@@ -603,7 +640,67 @@
                   </div>
                 </div>
               </div>
-              <div class="partners__box--right"></div>
+              <div class="partners__box--right swiper mySwiper-partners">
+                <div class="partners__wrapper swiper-wrapper">
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-1.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-2.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-3.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-4.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-5.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-6.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-1.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-2.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-3.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-1.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-2.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-3.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-4.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-5.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-6.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-1.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-2.png" alt="" />
+                  </div>
+                  <div class="partners__slide swiper-slide">
+                    <img src="./frontend/img/partners-logo-3.png" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swiper-button-next4"></div>
+                <div class="swiper-button-prev swiper-button-prev4"></div>
+                <div class="swiper-pagination swiper-pagination4"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -632,10 +729,23 @@
 
               <div class="feature__wrap--bottom">
                 <div class="feature__box--left">
-                  <img src="./frontend/img/feature-box-left.png" alt="" />
+                  <div class="feature__box--left-wrap">
+                    <img
+                      class="feature__img"
+                      src="./frontend/img/feature-box-left.png"
+                      alt=""
+                    />
+                    <img
+                      class="feature__date"
+                      src="./frontend/img/featured-date.png"
+                      alt=""
+                    />
+                  </div>
                   <div class="feature--left-title">
-                    Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng cục Thuế
-                    về...
+                    <a href=""
+                      >Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng cục
+                      Thuế về...</a
+                    >
                   </div>
                   <div class="feature--left-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -646,43 +756,87 @@
                 <div class="feature__box--right">
                   <div class="feature-right--top">
                     <div class="feature__mini-box">
-                      <img
-                        src="./frontend/img/feature-box-right-1.png"
-                        alt=""
-                      />
+                      <div class="feature__mini-box-wrap">
+                        <img
+                          class="feature__img"
+                          src="./frontend/img/feature-box-right-1.png"
+                          alt=""
+                        />
+                        <img
+                          class="feature__date"
+                          src="./frontend/img/featured-date.png"
+                          alt=""
+                        />
+                      </div>
                       <div class="feature__mini-box-title">
-                        Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng ...
+                        <a href=""
+                          >Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng
+                          ...</a
+                        >
                       </div>
                     </div>
 
                     <div class="feature__mini-box">
-                      <img
-                        src="./frontend/img/feature-box-right-2.png"
-                        alt=""
-                      />
+                      <div class="feature__mini-box-wrap">
+                        <img
+                          class="feature__img"
+                          src="./frontend/img/feature-box-right-2.png"
+                          alt=""
+                        />
+                        <img
+                          class="feature__date"
+                          src="./frontend/img/featured-date.png"
+                          alt=""
+                        />
+                      </div>
                       <div class="feature__mini-box-title">
-                        Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng ...
+                        <a href=""
+                          >Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng
+                          ...</a
+                        >
                       </div>
                     </div>
                   </div>
                   <div class="feature-right--bottom">
                     <div class="feature__mini-box">
-                      <img
-                        src="./frontend/img/feature-box-right-3.png"
-                        alt=""
-                      />
+                      <div class="feature__mini-box-wrap">
+                        <img
+                          class="feature__img"
+                          src="./frontend/img/feature-box-right-3.png"
+                          alt=""
+                        />
+                        <img
+                          class="feature__date"
+                          src="./frontend/img/featured-date.png"
+                          alt=""
+                        />
+                      </div>
                       <div class="feature__mini-box-title">
-                        Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng ...
+                        <a href=""
+                          >Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng
+                          ...</a
+                        >
                       </div>
                     </div>
 
                     <div class="feature__mini-box">
-                      <img
-                        src="./frontend/img/feature-box-right-4.png"
-                        alt=""
-                      />
+                      <div class="feature__mini-box-wrap">
+                        <img
+                          class="feature__img"
+                          src="./frontend/img/feature-box-right-4.png"
+                          alt=""
+                        />
+                        <img
+                          class="feature__date"
+                          src="./frontend/img/featured-date.png"
+                          alt=""
+                        />
+                      </div>
                       <div class="feature__mini-box-title">
-                        Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng ...
+                        <a href=""
+                          >Công văn số 2532/TCT-DNNCN ngày 12/07/2021 của Tổng
+                          ...</a
+                        >
                       </div>
                     </div>
                   </div>
@@ -912,6 +1066,32 @@
             </div>
           </div>
         </div>
+
+        <!--START Chat-->
+        <div class="chat">
+          <div class="chat__box-1">
+            <a href="tel:0868679028"
+              ><i class="fa-solid fa-phone-volume chat__icon phone"></i
+            ></a>
+          </div>
+          <div class="chat__box-2">
+            <a href=""
+              ><i class="fa-brands fa-facebook-messenger chat__icon mess"></i
+            ></a>
+          </div>
+
+          <a href=""
+            ><img
+              class="chat__icon-zalo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+            />
+          </a>
+
+          <div class="chat__box-3" id="backToTop">
+            <i class="fa-solid fa-arrow-up chat__icon"></i>
+          </div>
+        </div>
+        <!--END Chat-->
       </div>
       <!--END Footer-->
     </div>

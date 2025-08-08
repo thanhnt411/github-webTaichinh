@@ -1,3 +1,4 @@
+//START Menu mobile
 const menuMobile = document.getElementById("toggle");
 const nav = document.querySelector(".header__menu");
 const iconOpen = document.getElementById("isOpen");
@@ -14,8 +15,10 @@ menuMobile.addEventListener("click",function() {
         iconClose.classList.remove("show");
     }
 });
+//END Menu mobile
 
-var swiper = new Swiper(".mySwiper", {
+//START Banner
+var swiperBanner = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
@@ -26,8 +29,108 @@ var swiper = new Swiper(".mySwiper", {
     },
     
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination1",
         clickable: true,
     },
-   
 });
+//END Banner
+
+//START training,feedback,partners
+var swiperTraining = new Swiper(".mySwiper-training", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 4,          
+    slidesPerGroup: 1, 
+    
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next3",
+        prevEl: ".swiper-button-prev3",
+    },
+});
+
+var swiperFeedback = new Swiper(".mySwiper-feedback", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 3,          
+    slidesPerGroup: 1, 
+    
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
+});
+
+ var swiperPartners = new Swiper(".mySwiper-partners", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+    grid: {
+        rows: 3,
+    },
+
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+
+    pagination: {
+        el: ".swiper-pagination4",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next4",
+        prevEl: ".swiper-button-prev4",
+    },
+});
+//END training,feedback,partners
+
+//START Back to top
+const backToTop = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 2000) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+ });
+
+backToTop.addEventListener("click", () => {
+    smoothScrollToTop(700);
+});
+
+function smoothScrollToTop(duration) {
+  const start = window.scrollY;
+  const startTime = performance.now();
+
+  function scrollStep(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1); // từ 0 → 1
+    const ease = 1 - Math.pow(1 - progress, 3); // easing cubic-out
+    window.scrollTo(0, start * (1 - ease));
+
+    if (progress < 1) {
+      requestAnimationFrame(scrollStep);
+    }
+  }
+
+  requestAnimationFrame(scrollStep);
+}
+//END Back to top
+
