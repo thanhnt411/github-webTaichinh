@@ -1,0 +1,483 @@
+/*START Banner*/
+.banner__background {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/banner-dichvu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+}
+
+.banner__box {
+    max-width: 650px;
+    padding: 32px 100px;
+    text-align: justify;
+     
+}
+
+.banner__sub-heading {
+    line-height: 1.6;
+}
+/*END Banner*/
+
+/*START Page to*/
+.page-to {
+    background-color: #f4f6f4;
+}
+
+.page-to__wrap {
+    width: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-to__heading {
+    color: #f21520;
+    font-size: 16px;
+}
+/*END Page to*/
+
+/*START Service*/
+.service {
+    background-color: #f4f6f4;
+    padding: 74px 0;
+}
+.service__wrap {
+    width: 100%;
+    display: flex;
+    gap: 67px;
+}
+
+.service__introduce {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.service__dichvu-title {
+    margin-bottom: 40px;
+    padding: 0 80px;
+}
+
+.service__dichvu-heading{
+    color: #f21520;
+    font-family: "Poppins";
+    font-size: 14px;
+    letter-spacing: 7px;
+}
+
+.service__dichvu-sub-heading{
+    color: #2f2f2f;
+    font-weight: 500;
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.service__underline {
+    width: 40px;
+    height: 2px;
+    background-color: #244691;
+    margin-top: 16px;
+}
+
+.service__dichvu-text {
+    width: 100%;
+    border: 5px solid #244691;
+    padding: 29px 57px;
+}
+
+.service__dichvu-text-box {
+    text-align: justify;
+}
+
+.service__dichvu-contact {
+    max-width: 173px;
+    height: 40px;
+    background-color: #f21520;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 13px;
+    margin-bottom: -50px;
+}
+
+.service__dichvu-contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.service__img {
+    max-width: 50%;
+    display: flex;
+    gap: 24px;
+}
+
+.service__img-box {
+    width: 50%;
+}
+/*END Service*/
+
+/*START Detailed Service*/
+.detailed-service__wrap {
+    padding-top: 80px;
+    padding-bottom: 32px;
+}
+
+.detailed-service__content {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.detailed-service__content-box {
+    width: 25%;
+    box-shadow: 0px 3px 12px 0px #00000014;
+    padding: 24px 18px 66px;
+    text-align: center;
+}
+
+.detailed-service__icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #f4f6f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+}
+
+.detailed-service__icon {
+    color: #244691;
+    font-size: 38px;
+}
+
+.detailed-service__text {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.detailed-service__sub-text {
+    color: #474747;
+}
+
+.detailed-service__content-box:hover {
+    background-color: #244691;
+}
+
+.detailed-service__content-box:hover .detailed-service__icon-box {
+    background-color: #244691;
+}
+
+.detailed-service__content-box:hover .detailed-service__text,
+.detailed-service__content-box:hover .detailed-service__sub-text,
+.detailed-service__content-box:hover .detailed-service__icon {
+    color: #fff;
+}
+/*END Detailed Service*/
+
+/*START Staff*/
+.staff {
+    background-color: #f4f6f9;
+}
+
+.staff__wrap {
+    width: 100%;
+    padding: 48px 0;
+    display: flex;
+    gap: 52px;
+}
+
+.staff__box--left {
+    max-width: 50%;
+}
+
+.staff__box--right {
+    width: 50%;
+}
+
+.staff__title {
+    color: #2f2f2f;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.staff__sub-title {
+    color: #244691;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.staff__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.staff__list-box {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0px 16px 32px 0px #5A8EFF1A;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 15px;
+}
+
+.staff__icon-box {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #f21520;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.staff__icon {
+    color: #f21520;
+}
+
+.staff__list-box:hover .staff__list-title {
+    color: #f21520;
+}
+
+.staff__list-box:hover .staff__icon-box,
+.staff__list-box:hover .staff__icon {
+    background-color: #f21520;
+    color: #ffffff;
+}
+
+/*END Staff*/
+
+/*START Controll*/
+.controll__wrap {
+    padding: 48px 0;
+}
+
+.controll__title {
+    text-align: center;
+    padding: 0 260px;
+    margin-bottom: 40px;
+}
+
+.controll__heading {
+    color: #2f2f2f;
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.controll__sub-heading {
+    color: #244691;
+    font-size: 16px;
+}
+
+.controll__content {
+    width: 100%;
+    display: flex;
+    gap: 45px;
+}
+
+.controll--left, .controll--right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.controll__img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #EBEBEB;
+}
+
+.controll__background--left, .controll__background--right {
+    width: 100%;
+    min-height: 303px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 right;
+    position: relative;
+    right: 16px;
+    bottom: 16px;
+    z-index: 2;
+    padding: 73px 95px;
+}
+
+.controll__background--left {
+    background-image: url("../img/controll-img-left.png");
+}
+
+.controll__background--right {
+    background-image: url("../img/controll-img-right.png");
+}
+.controll__img-box {
+    width: 100%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.controll__topline {
+    width: 39px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 0 auto 11px; 
+}
+
+.controll__text {
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.controll__contact {
+    width: 150px;
+    height: 40px;
+    background-color: #f21520;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.controll__contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.controll__sub {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.controll__underline {
+    width: 70px;
+    height: 2px;
+    background-color: #244691;
+}
+/*END Controll*/
+
+.consulting {
+    position: relative;
+    z-index: 1;
+}
+/*START business consulting*/
+.business-consulting {
+    background-color: #f4f6f9;
+}
+
+.business-consulting__wrap {
+    width: 100%;
+    padding-top: 59px;
+}
+
+.business-consulting__title {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.business-consulting__heading {
+    color: #2f2f2f;
+    font-size: 26px;
+    margin-bottom: 16px;
+}
+
+.business-consulting__sub-heading {
+    color: #244691;
+    margin-bottom: 83px;
+}
+
+.business-consulting__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.business-consulting__introduce {
+    width: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 14px 0px #00000014;
+    padding: 42px 30px;
+    position: relative;
+    top: 110px;
+    z-index: 3;
+}
+
+.business-consulting__introduce-title {
+    color: #2f2f2f;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.business-consulting__introduce-text {
+    color: #474747;
+    margin-bottom: 24px;
+}
+
+.business-consulting__contact {
+    width: 150px;
+    height: 40px;
+    background-color: #f21520;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.business-consulting__contact a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.business-consulting__img {
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left: 570px;
+}
+/*END business consulting*/
+
+/*START rule consulting*/
+.rule-consulting {
+    margin-top: 240px;
+    margin-bottom: 80px;
+}
+
+.rule-consulting__wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.rule-consulting--left {
+    width: 50%;
+}
+
+.rule-consulting--right {
+    width: 50%;
+    display: flex;
+    gap: 24px;
+}
+
+.rule-consulting__img--left, .rule-consulting__img--right {
+    max-width: 256px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rule-consulting__img--left {
+    margin-top: 38px;
+}
+.rule-consulting__img {
+    max-width: 100%;
+}
+/*START rule consulting*/
+
+

@@ -88,9 +88,9 @@
               <div class="header__menu-logo">
                 <img src="./frontend/img/SAB LOGO-01.png" alt="" />
               </div>
-              <li><a href="">TRANG CHỦ</a></li>
-              <li><a href="">GIỚI THIỆu</a></li>
-              <li><a href="">DỊCH VỤ</a></li>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
+              <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
+              <li><a href="./dichvu.html">DỊCH VỤ</a></li>
               <li><a href="">ĐÀO TẠO</a></li>
               <li><a href="">SẢN PHẨM</a></li>
               <li><a href="">TIN TỨC</a></li>
@@ -295,7 +295,9 @@
                     viên công chứng (ACCA, CPA), Kế toán trưởng ...
                   </p>
                   <div class="service__contact">
-                    <a href="" class="service__contact-link">Xem chi tiết</a>
+                    <a href="./dichvu.html#staff" class="service__contact-link"
+                      >Xem chi tiết</a
+                    >
                   </div>
                 </div>
                 <div class="service__box">
@@ -311,7 +313,11 @@
                     viên công chứng (ACCA, CPA), Kế toán trưởng ...
                   </p>
                   <div class="service__contact">
-                    <a href="" class="service__contact-link">Xem chi tiết</a>
+                    <a
+                      href="./dichvu.html#controll"
+                      class="service__contact-link"
+                      >Xem chi tiết</a
+                    >
                   </div>
                 </div>
               </div>
@@ -329,7 +335,11 @@
                     viên công chứng (ACCA, CPA), Kế toán trưởng ...
                   </p>
                   <div class="service__contact">
-                    <a href="" class="service__contact-link">Xem chi tiết</a>
+                    <a
+                      href="./dichvu.html#business-consulting"
+                      class="service__contact-link"
+                      >Xem chi tiết</a
+                    >
                   </div>
                 </div>
                 <div class="service__box">
@@ -345,7 +355,11 @@
                     viên công chứng (ACCA, CPA), Kế toán trưởng ...
                   </p>
                   <div class="service__contact">
-                    <a href="" class="service__contact-link">Xem chi tiết</a>
+                    <a
+                      href="./dichvu.html#rule-consulting"
+                      class="service__contact-link"
+                      >Xem chi tiết</a
+                    >
                   </div>
                 </div>
               </div>
@@ -443,7 +457,11 @@
             <div class="product__container container">
               <div class="product__box">
                 <div class="product__background--top">
-                  <img src="./frontend/img/product-background-top.png" alt="" />
+                  <img
+                    class="product__img"
+                    src="./frontend/img/product-background-top.png"
+                    alt=""
+                  />
                 </div>
                 <div class="product__info">
                   <h3 class="content__title">Hóa đơn điện tử</h3>
@@ -461,9 +479,16 @@
             </div>
           </div>
 
-          <div class="product__wrap--bottom">
+          <div class="product__wrap--bottom reverse">
             <div class="product__container container">
-              <div class="product__box">
+              <div class="product__box-2 reverse">
+                <div class="product__background--bottom">
+                  <img
+                    class="product__img"
+                    src="./frontend/img/product-background-bottom.png"
+                    alt=""
+                  />
+                </div>
                 <div class="product__info">
                   <h3 class="content__title">Chữ ký điện tử</h3>
                   <p class="content__sub-title">
@@ -475,12 +500,6 @@
                   <div class="content__contact">
                     <a href="" class="content__contact-link">Xem chi tiết</a>
                   </div>
-                </div>
-                <div class="product__background--bottom">
-                  <img
-                    src="./frontend/img/product-background-bottom.png"
-                    alt=""
-                  />
                 </div>
               </div>
             </div>
@@ -860,8 +879,8 @@
                   </p>
                 </div>
                 <form action="" class="contact__from">
-                  <div class="contact__col--top">
-                    <div class="contact__col">
+                  <div class="contact__row">
+                    <div class="contact__col--top">
                       <input
                         type="text"
                         name=""
@@ -878,10 +897,8 @@
                         class="form--half"
                       />
                     </div>
-                  </div>
 
-                  <div class="contact__col--bottom">
-                    <div class="contact__col">
+                    <div class="contact__col--bottom">
                       <input
                         type="tel"
                         name=""
@@ -897,22 +914,22 @@
                         class="form--half"
                       />
                     </div>
-                  </div>
 
-                  <div class="contact--col-height">
-                    <textarea
-                      name=""
-                      rows="1"
-                      id=""
-                      placeholder="Nội dung"
-                      class="form--control"
-                    ></textarea>
+                    <div class="contact--col-height">
+                      <textarea
+                        name=""
+                        rows="1"
+                        id=""
+                        placeholder="Nội dung"
+                        class="form--control"
+                      ></textarea>
+                    </div>
+                    <input
+                      type="submit"
+                      value="Gửi yêu cầu"
+                      class="contact__submit"
+                    />
                   </div>
-                  <input
-                    type="submit"
-                    value="Gửi yêu cầu"
-                    class="contact__submit"
-                  />
                 </form>
               </div>
             </div>

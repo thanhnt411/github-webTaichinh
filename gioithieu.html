@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./frontend/css/style.css" />
+    <link rel="stylesheet" href="./frontend/css/gioithieu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!--START Header-->
+      <div class="header">
+        <div class="header__top-wrapper">
+          <div class="header__container container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
+              </div>
+              <form action="">
+                <div class="header__search">
+                  <div class="header__search-border">
+                    <input
+                      type="text"
+                      placeholder="Nhập từ khóa tìm kiếm"
+                      class="header__input"
+                    />
+                    <div class="header__search-box">
+                      <div class="header__search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="header__contact">
+                <div class="header__contact--left">
+                  <img
+                    src="./frontend/img/mail.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">E-MAIL</span>
+                    <a
+                      class="header__contact-link"
+                      href="mailto:thanhtien412006@gmail.com"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                </div>
+
+                <div class="header__contact--right">
+                  <img
+                    src="./frontend/img/Group.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">LIÊN HỆ</span>
+                    <a class="header__contact-link" href="tel:0868679028"
+                      >0963561906</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__ham" id="toggle">
+                <i class="fas fa-bars" id="isOpen"></i>
+                <i class="fa-solid fa-xmark" id="isClose"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <div class="header__menu container">
+            <ul class="header__list">
+              <div class="header__menu-logo">
+                <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+              </div>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
+              <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
+              <li><a href="./dichvu.html">DỊCH VỤ</a></li>
+              <li><a href="">ĐÀO TẠO</a></li>
+              <li><a href="">SẢN PHẨM</a></li>
+              <li><a href="">TIN TỨC</a></li>
+              <li><a href="">LIÊN HỆ</a></li>
+              <div class="header__traslate">
+                <div class="header__translate-viet">
+                  <a href=""><img src="./frontend/img/Mask Group.png" /></a>
+                  <span class="header__translate-name">Tiếng Việt</span>
+                </div>
+
+                <div class="header__translate-mi">
+                  <a href=""><img src="./frontend/img/Mask Group (1).png" /></a>
+                  <span class="header__translate-name">English</span>
+                </div>
+              </div>
+            </ul>
+            <div class="header__menu-traslate">
+              <a href=""><img src="./frontend/img/Mask Group.png" alt="" /></a>
+              <a href=""
+                ><img src="./frontend/img/Mask Group (1).png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Header-->
+
+      <!--START Banner-->
+      <div class="banner__gioithieu"></div>
+      <!--END Banner-->
+
+      <!--START Content-->
+      <div class="content">
+        <!--START Page-to-->
+        <div class="page-to">
+          <div class="page-to__container container">
+            <div class="page-to__wrap">
+              <i class="fa-solid fa-house page__icon-home"></i>
+              <i class="fa-solid fa-angles-right page__icon-next"></i>
+              <span class="page-to__heading">Giới thiệu</span>
+            </div>
+          </div>
+        </div>
+        <!--END Page-to-->
+
+        <!--START About-->
+        <div class="about">
+          <div class="about__container container">
+            <div class="about__wrap reverse">
+              <div class="about__introduce">
+                <div class="about__title">
+                  <span class="about__heading">ABOUT US</span>
+                  <h2 class="about__sub-heading">Về chúng tôi</h2>
+                  <div class="about__underline"></div>
+                </div>
+                <div class="about__text">
+                  <p class="about__text--title">
+                    Công ty TNHH Tư vấn Quản lý Tài chính SAB là công ty tư vấn
+                    chuyên nghiệp trong mảng Kế toán – Thuế - Luật Doanh nghiệp
+                    cho các cá nhân, doanh nghiệp phát triển kinh doanh tại Việt
+                    Nam.
+                  </p>
+                  <div class="about__text--list">
+                    <div class="about--list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="about--list-content">
+                        SAB được bắt nguồn từ Trung tâm dịch vụ kế toán SAB, nơi
+                        hội tụ của các chuyên gia kế toán, tài chính với nhiều
+                        năm kinh nghiệm hành nghề, có nghiệp vụ chuyên môn vững
+                        chắc, cung cấp dịch vụ chuyên sâu về ghi sổ, kế toán,
+                        thuế và tư vấn cho các Doanh nghiệp.
+                      </p>
+                    </div>
+                    <div class="about--list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="about--list-content">
+                        Nhân sự của chúng tôi là những người có nhiều năm kinh
+                        nghiệm trong lĩnh vực tư vấn, có đầy đủ các chứng chỉ
+                        nghề do Bộ Tài Chính, Tổng Cục Thuế cấp.
+                      </p>
+                    </div>
+                    <div class="about--list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="about--list-content">
+                        Chất lượng dịch vụ được xây dựng cam kết làm hài lòng
+                        tất cả các khách hàng.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__company-box">
+                <div class="about__img">
+                  <img
+                    class="about__img--box"
+                    src="./frontend/img/about-img-1.png"
+                    alt=""
+                  />
+                  <img
+                    class="about__img--box"
+                    src="./frontend/img/about-img-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="about__company-title">
+                  <h1 class="about__company-heading">"THE SKY'S THE LIMIT"</h1>
+                  <span class="about__company-sub-heading"
+                    >- Công ty Tư vấn quản lý tài Chính SAB</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END About-->
+
+        <!--START Leader-->
+        <div class="leader">
+          <div class="leader__container container">
+            <div class="leader__wrap reverse">
+              <div class="leader__introduce about__introduce">
+                <div class="leader__title about__title">
+                  <span class="leader__heading about__heading">OUR LEADER</span>
+                  <h2 class="leader__sub-heading about__sub-heading">
+                    Về lãnh đạo của chúng tôi
+                  </h2>
+                  <div class="leader__underline about__underline"></div>
+                </div>
+                <div class="leader__text">
+                  <div class="leader__text-list">
+                    <div class="leader__list-box">
+                      <i class="fa-solid fa-angles-right page__icon-next"></i>
+                      <p class="leader__text-content">
+                        Bà Triệu Thị Thu Phương có hơn 18 năm kinh nghiệm trong
+                        lĩnh vực tư vấn Tài chính, Kế toán, Thuế, Luật cho các
+                        doanh nghiệp trong và ngoài nước hoạt động tại Việt Nam.
+                        Bà thành lập SAB từ năm 2015 với mô hình dịch vụ kế
+                        toán, chịu trách nhiệm chính mảng dịch vụ Kế toán, khai
+                        thuế, quản trị doanh nghiệp và tư vấn cho khách hàng.
+                      </p>
+                    </div>
+                    <div class="leader__list-box">
+                      <i class="fa-solid fa-angles-right page__icon-next"></i>
+                      <p class="leader__text-content">
+                        Năm 2017, Bà cùng các cộng sự mở rộng điều hành SAB với
+                        vai trò Giám đốc trung tâm dịch vụ Kế toán và Đào tạo kế
+                        toán thực hành.
+                      </p>
+                    </div>
+                    <div class="leader__list-box">
+                      <i class="fa-solid fa-angles-right page__icon-next"></i>
+                      <p class="leader__text-content">
+                        Năm 2020, Bà giữ vai trò Chủ tịch hội đồng Thành Viên
+                        Công ty TNHH Tư vấn quản lý Tài chính SAB, mở rộng và
+                        phát triển mảng dịch vụ gồm 4 nhóm chính: Dịch vụ Kế
+                        toán - Thuế, Dịch vụ Kiểm soát nội bộ, Dịch vụ Tư vấn
+                        quản lý doanh nghiệp, Dịch vụ Tư vấn Luật
+                      </p>
+                    </div>
+                  </div>
+                  <div class="leader__list-box">
+                    <i class="fa-solid fa-angles-right page__icon-next"></i>
+                    <p class="leader__text-content">
+                      Bà tốt nghiệp cử nhân Học viện Tài Chính (2003), chuyên
+                      ngành Kế toán và tiếp tục tốt nghiệp Thạc sĩ kinh tế Học
+                      viện Tài Chính (2014). Bà đã có chứng chỉ Kiểm toán viên
+                      (VNCPA) do Bộ Tài Chính cấp và Chứng chỉ hành nghề thủ tục
+                      về thuế ( VNCPT) do Tổng Cục Thuế cấp.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="leader__img-box">
+                <img
+                  class="leader__img"
+                  src="./frontend/img/leader-img.png"
+                  alt=""
+                />
+                <div class="leader__img-title">
+                  <div class="leader__img-heading">Bà Triệu Thị Thu Phương</div>
+                  <div class="leader__img-sub-heading">
+                    CEO Công ty TNHH Tư vấn Quản lý Tài chính SAB
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--START Leader-->
+
+        <!--START Section-->
+        <div class="section">
+          <div class="section__container container">
+            <div class="section__wrap">
+              <div class="section__img">
+                <div class="section__img--top">
+                  <img src="./frontend/img/section-img-top.png" alt="" />
+                </div>
+                <div class="section__img--bottom">
+                  <img
+                    class="section__img--bottom-box"
+                    src="./frontend/img/section-img-bottom-left.png"
+                    alt=""
+                  />
+                  <img
+                    class="section__img--bottom-box"
+                    src="./frontend/img/ssection-img-bottom-right.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="section__content">
+                <h2 class="section__heading">
+                  Công ty Tư vấn quản lý tài Chính SAB
+                </h2>
+                <h2 class="section__heading">Kết sức mạnh, nối thành công</h2>
+                <p class="section__text">
+                  Với mong muốn trở thành đối tác tin cậy, góp phần vào thành
+                  công của Quý doanh nghiệp tại Việt Nam, chúng tôi luôn cải
+                  tiến để cung cấp dịch vụ tốt nhất và vượt qua được sự kỳ vọng
+                  của Quý khách hàng.
+                </p>
+                <div class="section__button">
+                  <div class="section__button-box">
+                    <a href="" class="section__button-title">Tầm nhìn</a>
+                  </div>
+                  <div class="section__button-box">
+                    <a href="" class="section__button-title">Sứ mệnh</a>
+                  </div>
+                  <div class="section__button-box">
+                    <a href="" class="section__button-title">Giá trị cốt lõi</a>
+                  </div>
+                </div>
+                <div class="section__list">
+                  <div class="section__list-box">
+                    <i class="fa-solid fa-angles-right section__icon-next"></i>
+                    <p class="section__list-text">
+                      Với khách hàng: Cung cấp dịch vụ kế toán tài chính hiệu
+                      quả, đảm bảo sức khỏe tài chính, phát triển bền vững cho
+                      khách hàng.
+                    </p>
+                  </div>
+                  <div class="section__list-box">
+                    <i class="fa-solid fa-angles-right section__icon-next"></i>
+                    <p class="section__list-text">
+                      Với đối tác: Hợp tác chặt chẽ, gia tăng giá trị mỗi bên,
+                      cùng có lợi.
+                    </p>
+                  </div>
+                  <div class="section__list-box">
+                    <i class="fa-solid fa-angles-right section__icon-next"></i>
+                    <p class="section__list-text">
+                      Với CBNV: Nơi hội tụ và phát triển nhân tài
+                    </p>
+                  </div>
+                  <div class="section__list-box">
+                    <i class="fa-solid fa-angles-right section__icon-next"></i>
+                    <p class="section__list-text">
+                      Với cổ đông: Tối ưu lợi ích cổ đông
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Section-->
+
+        <!--START Action-->
+        <div class="action">
+          <div class="action__container container">
+            <div class="action__wrap">
+              <div class="action__box">
+                <div class="action__box--left">
+                  <h3 class="action__title">Giải pháp</h3>
+                  <div class="action__list">
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Tư vấn tài chính dựa trên mục tiêu của doanh nghiệp
+                      </p>
+                    </div>
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Cung cấp giải pháp quản lý hiệu quả và thiết thực phù
+                        hợp với mô hình hoạt động của doanh nghiệp
+                      </p>
+                    </div>
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Tối ưu hóa lợi ích doanh nghiệp
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="action__box">
+                <div class="action__box--right">
+                  <h3 class="action__title">Cam kết</h3>
+                  <div class="action__list">
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Cung cấp dịch vụ tốt nhất với chi phí cạnh tranh
+                      </p>
+                    </div>
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Cập nhật kịp thời và nhanh chóng các thông tin pháp lý,
+                        đảm bảo doanh nghiệp khách hàng vận hành đúng luật
+                      </p>
+                    </div>
+                    <div class="action__list-box">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="action__list-text">
+                        Đội ngũ nhân viên đáp dứng nhu cầu của doanh nghiệp cũng
+                        như sự phát triển của nền kinh tế
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Action-->
+
+        <!--START Contact-->
+        <div class="contact">
+          <div class="contact__container container">
+            <div class="contact__wrap">
+              <div class="contact__box">
+                <div class="contact__title">
+                  <div class="contact__heading">Đăng ký tư vấn</div>
+                  <p class="contact__sub-heading">
+                    Đăng ký để có thể nhận thông tin tư vấn nhanh chóng và ưu
+                    đãi hấp dẫn của chúng tôi.
+                  </p>
+                </div>
+                <form action="" class="contact__from">
+                  <div class="contact__row">
+                    <div class="contact__col--top">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Họ và tên"
+                        id=""
+                        class="form--half"
+                      />
+
+                      <input
+                        type="email"
+                        name=""
+                        placeholder="E-mail"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact__col--bottom">
+                      <input
+                        type="tel"
+                        name=""
+                        placeholder="Số điện thoại"
+                        id=""
+                        class="form--half"
+                      />
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Chủ đề"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact--col-height">
+                      <textarea
+                        name=""
+                        rows="1"
+                        id=""
+                        placeholder="Nội dung"
+                        class="form--control"
+                      ></textarea>
+                    </div>
+                    <input
+                      type="submit"
+                      value="Gửi yêu cầu"
+                      class="contact__submit"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Contact-->
+      </div>
+      <!--END Content-->
+
+      <!--START Footer-->
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="footer__background">
+              <div class="footer__company-info">
+                <div class="company-info__logo">
+                  <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+                </div>
+                <p class="company-info__text">
+                  Molestie nec, molestie libero in auctor <br />
+                  vels. Quis dictumst nulla risus curabitur <br />
+                  non dolor, pulvinar. Orci, pretium pretium <br />
+                  velit scelerisqueultrices.
+                </p>
+                <div class="company-info__sticker">
+                  <img src="./frontend/img/image 33.png" alt="" />
+                </div>
+              </div>
+              <div class="footer__company-contact">
+                <div class="company-contact__name">
+                  Công ty TNHH Tư vấn Quản lý Tài chính SAB
+                </div>
+                <div class="company-contact__box">
+                  <p class="company-contact__address">
+                    Địa chỉ: DV05-LK289, Khu đất dịch vụ Đào Đất Hàng Bè, -
+                    Phường Kiến Hưng - Quận Hà Đông - Hà Nội
+                  </p>
+                  <a href="tel:0868679028" class="company-contact__tel"
+                    >Số điện thoại: 0963561906</a
+                  >
+                  <a
+                    href="mailto:thanhtien4112006@gmail.com"
+                    class="company-contact__email"
+                    >Email: contact@sabfa.com.vn</a
+                  >
+                </div>
+              </div>
+              <div class="footer__company-support">
+                <div class="company-support__title">
+                  <div class="company-support__heading">Hỗ trợ khách hàng</div>
+                  <ul class="company-support__sub-heading">
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Tư vấn trực tuyến</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Hỏi đáp</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="company-support__following">
+                  <div class="company-support__following-title">
+                    Theo dõi chúng tôi qua
+                  </div>
+                  <ul class="company-support__following-app">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__company-link">
+                <div class="company-link__title">Link nhanh</div>
+                <ul class="company-link__item">
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Dịch vụ</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Đào tạo</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Sản phẩm</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Tin tức</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="container">
+            <div class="footer-end__wrap">
+              <div class="footer-end__copy">
+                &copy;2021 SAB. All Right Reserved
+              </div>
+              <div class="footer-end__title">Chính sách bảo mật thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <!--START Chat-->
+        <div class="chat">
+          <div class="chat__box-1">
+            <a href="tel:0868679028"
+              ><i class="fa-solid fa-phone-volume chat__icon phone"></i
+            ></a>
+          </div>
+          <div class="chat__box-2">
+            <a href=""
+              ><i class="fa-brands fa-facebook-messenger chat__icon mess"></i
+            ></a>
+          </div>
+
+          <a href=""
+            ><img
+              class="chat__icon-zalo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+            />
+          </a>
+
+          <div class="chat__box-3" id="backToTop">
+            <i class="fa-solid fa-arrow-up chat__icon"></i>
+          </div>
+        </div>
+        <!--END Chat-->
+      </div>
+      <!--END Footer-->
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./frontend/js/script.js"></script>
+</html>

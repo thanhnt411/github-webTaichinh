@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./frontend/css/style.css" />
+    <link rel="stylesheet" href="./frontend/css/dichvu.css" />
+    <link rel="stylesheet" href="./frontend/css/CT-dichvu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!--START Header-->
+      <div class="header">
+        <div class="header__top-wrapper">
+          <div class="header__container container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
+              </div>
+              <form action="">
+                <div class="header__search">
+                  <div class="header__search-border">
+                    <input
+                      type="text"
+                      placeholder="Nhập từ khóa tìm kiếm"
+                      class="header__input"
+                    />
+                    <div class="header__search-box">
+                      <div class="header__search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="header__contact">
+                <div class="header__contact--left">
+                  <img
+                    src="./frontend/img/mail.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">E-MAIL</span>
+                    <a
+                      class="header__contact-link"
+                      href="mailto:thanhtien412006@gmail.com"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                </div>
+
+                <div class="header__contact--right">
+                  <img
+                    src="./frontend/img/Group.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">LIÊN HỆ</span>
+                    <a class="header__contact-link" href="tel:0868679028"
+                      >0963561906</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__ham" id="toggle">
+                <i class="fas fa-bars" id="isOpen"></i>
+                <i class="fa-solid fa-xmark" id="isClose"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <div class="header__menu container">
+            <ul class="header__list">
+              <div class="header__menu-logo">
+                <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+              </div>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
+              <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
+              <li><a href="./dichvu.html">DỊCH VỤ</a></li>
+              <li><a href="">ĐÀO TẠO</a></li>
+              <li><a href="">SẢN PHẨM</a></li>
+              <li><a href="">TIN TỨC</a></li>
+              <li><a href="">LIÊN HỆ</a></li>
+              <div class="header__traslate">
+                <div class="header__translate-viet">
+                  <a href=""><img src="./frontend/img/Mask Group.png" /></a>
+                  <span class="header__translate-name">Tiếng Việt</span>
+                </div>
+
+                <div class="header__translate-mi">
+                  <a href=""><img src="./frontend/img/Mask Group (1).png" /></a>
+                  <span class="header__translate-name">English</span>
+                </div>
+              </div>
+            </ul>
+            <div class="header__menu-traslate">
+              <a href=""><img src="./frontend/img/Mask Group.png" alt="" /></a>
+              <a href=""
+                ><img src="./frontend/img/Mask Group (1).png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Header-->
+
+      <!--START Banner-->
+      <div class="banner">
+        <div class="banner__background">
+          <div class="banner__container container">
+            <div class="banner__box">
+              <div class="banner__text">
+                <h1 class="banner__heading">Dịch vụ</h1>
+                <p class="banner__sub-heading">
+                  Với mong muốn trở thành đối tác tin cậy, góp phần vào thành
+                  công của Quý doanh nghiệp tại Việt Nam, chúng tôi luôn cải
+                  tiến để cung cấp dịch vụ tốt nhất và vượt qua được sự kỳ vọng
+                  của Quý khách hàng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Banner-->
+
+      <!--START Content-->
+      <div class="content">
+        <!--START Page-to-->
+        <div class="page-to-CT">
+          <div class="page-to__container container">
+            <div class="page-CT__wrap">
+              <i class="fa-solid fa-house page__icon-home"></i>
+              <i class="fa-solid fa-angles-right page__icon-next"></i>
+              <span class="page-to__heading-1">Dịch vụ</span>
+              <i class="fa-solid fa-angles-right page__icon-next"></i>
+              <span class="page-to__heading">Dịch vụ xét tuân thủ thuế</span>
+            </div>
+          </div>
+        </div>
+        <!--END Page-to-->
+
+        <!--START Tax service-->
+        <div class="tax-service">
+          <div class="tax-service__container container">
+            <div class="tax-service__wrap">
+              <div class="tax-service--left">
+                <h1 class="tax-service__title">Dịch vụ soát tuân thủ thuế</h1>
+                <p class="tax-service__text">
+                  Dịch vụ Soát xét tuân thủ thuế tại Doanh nghiệp là dịch vụ
+                  chuyên sâu của
+                  <b style="color: #244691"
+                    >Công ty TNHH Tư vấn quản lý tài chính SAB</b
+                  >, nhằm giúp các Doanh nghiệp lập kế hoạch thuế, tiết kiệm
+                  thuế, giảm rủi ro và tuân thủ thuế.
+                </p>
+                <img
+                  class="tax-service__img"
+                  src="./frontend/img/tax-service-img.png"
+                  alt=""
+                />
+                <p class="tax-service__text">
+                  Trong thực tế, các Doanh nghiệp thường phải nộp một số tiền
+                  rất lớn đối với khoản tiền thuế truy thu và tiền phạt sau mỗi
+                  đợt thanh kiểm tra thuế. Điều này là do Doanh nghiệp chưa nắm
+                  bắt rõ các quy định về thuế hiện hành dẫn tới kê khai thuế
+                  chưa đúng quy định. Các nhà lãnh đạo Doanh nghiệp thì cũng
+                  không nắm rõ nhân sự kế toán của mình có làm đúng hay không
+                  dẫn tới chưa ước tính được rủi ro về thuế.
+                </p>
+                <p class="tax-service__text">
+                  Nhằm giúp các Doanh nghiệp có thể biết được rủi ro về thuế tại
+                  Doanh nghiệp của mình và có biện pháp phòng tránh rủi ro về
+                  thuế, tăng tính tuân thủ trước khi cơ quan thuế tiến hành
+                  thanh kiểm tra thuế tại Doanh nghiệp, Chúng tôi xây dựng gói
+                  dịch vụ soát xét tuân thủ về thuế.
+                </p>
+                <h2 class="tax-service__heading">
+                  Dịch vụ của chúng tôi bao gồm
+                </h2>
+                <ul class="tax-service__list">
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Gửi danh sách tài liệu yêu cầu để khách hàng chuẩn bị
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Gửi bản câu hỏi (questionaire) để khách hàng điền vào
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Kiểm tra và đối chiếu số liệu trên hồ sơ khai thuế, báo
+                      cáo tài chính, sổ sách kế toán.
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Phỏng vấn và yêu cầu Doanh nghiệp giải trình
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Đánh giá rủi ro, liệt kê các khả năng có thể bị truy thu
+                      và xử phạt
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Tư vấn chuẩn bị các hồ sơ, tài liệu bổ sung cần thiết
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Ước tính số tiền thuế, tiền phạt có thể phát sinh
+                    </p>
+                  </li>
+                  <li class="tax-service__item">
+                    <i
+                      class="fa-regular fa-circle-check"
+                      style="color: #1a4b9a"
+                    ></i>
+                    <p class="tax-service__text">
+                      Giải thích và tư vấn giải pháp cho Doanh nghiệp
+                    </p>
+                  </li>
+                </ul>
+                <p class="tax-service__text">
+                  Dịch vụ được thực hiện bởi đội ngũ có nhiều năm kinh nghiệm
+                  cung cấp dịch vụ cho Doanh nghiệp trong và ngoài nước, có đầy
+                  đủ Giấy phép hành nghề do Bộ tài chính và Tổng cục thuế cấp.
+                  Chúng tôi cam kết chất lượng dịch vụ là trên hết và tinh thần
+                  Phục vụ khách hàng tận tâm.
+                </p>
+                <h2 class="tax-service__heading">
+                  Liên hệ ngay với đội ngũ chuyên gia của chúng tôi để được tư
+                  vấn
+                </h2>
+                <div class="tax-service__introduce">
+                  <div class="tax-service__introduce--left">
+                    <img
+                      src="./frontend/img/tax-service-introduce.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="tax-service__introduce--right">
+                    <p class="tax-service__text">
+                      Đối với dịch vụ Tư vấn Quản trị, kiểm soát, kiểm toán nội
+                      bộ, dịch vụ Kế toán, tư vấn thuế, bề dày kinh nghiệm và
+                      năng lực con người là yếu tố kiên quyết!
+                    </p>
+                    <ul class="tax-service__list">
+                      <li class="tax-service__item">
+                        <i
+                          class="fa-regular fa-circle-check"
+                          style="color: #1a4b9a"
+                        ></i>
+                        <p class="tax-service__text">
+                          Đội ngũ lãnh đạo trên 15 năm kinh nghiệm, quản lý có
+                          trung bình từ 6-8 năm kinh nghiệm.
+                        </p>
+                      </li>
+                      <li class="tax-service__item">
+                        <i
+                          class="fa-regular fa-circle-check"
+                          style="color: #1a4b9a"
+                        ></i>
+                        <p class="tax-service__text">
+                          95% CBNV đều có đầy đủ chứng chỉ nghiệp vụ, kinh
+                          nghiệm công tác.
+                        </p>
+                      </li>
+                      <li class="tax-service__item">
+                        <i
+                          class="fa-regular fa-circle-check"
+                          style="color: #1a4b9a"
+                        ></i>
+                        <p class="tax-service__text">
+                          Áp dụng các tiêu chuẩn tuyển dụng, đào tạo, quản lý
+                          chặt chẽ để không ngừng nâng cao chất lượng con người,
+                          chất lượng dịch vụ đem lại cho khách hàng
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tax-service__contact">
+                  <h2 class="tax-service__heading">Thông tin liên hệ</h2>
+                  <p class="tax-service__sub-heading">
+                    CÔNG TY TNHH TƯ VẤN QUẢN LÝ TÀI CHÍNH SAB
+                  </p>
+                  <div class="tax-service__suport">
+                    <i class="fa-regular fa-envelope tax-service__icon"></i>
+                    <a
+                      href="mailto:thanhtien4112006@gmail.com"
+                      class="tax-service__link"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                  <div class="tax-service__suport">
+                    <i class="fa-solid fa-headset tax-service__icon"></i>
+                    <a href="tel:0868679028" class="tax-service__link"
+                      >0963 561 906</a
+                    >
+                  </div>
+                  <div class="tax-service__suport">
+                    <i class="fa-solid fa-location-dot tax-service__icon"></i>
+                    <a href="" class="tax-service__link"
+                      >DV05 – LK289 Khu Đất DV đào đất Hàng Bè, P.Kiến Hưng,
+                      Q.Hà Đông, TP.Hà Nội</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="tax-service--right">
+                <!--START Register-->
+                <div class="register">
+                  <div class="register__title">
+                    <div class="register__heading">Đăng ký tư vấn</div>
+                    <p class="register__sub-heading">
+                      Đăng ký để có thể nhận thông tin tư vấn nhanh chóng và ưu
+                      đãi hấp dẫn của chúng tôi.
+                    </p>
+                  </div>
+                  <form action="" class="register__box">
+                    <div class="regiset__row">
+                      <div class="register__full">
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Họ và tên"
+                          id=""
+                          class="form--full"
+                        />
+                      </div>
+                      <div class="register__full">
+                        <input
+                          type="text"
+                          placeholder="Số điện thoại"
+                          class="form--full"
+                        />
+                      </div>
+                      <div class="register__full">
+                        <input
+                          type="text"
+                          placeholder="Email"
+                          class="form--full"
+                        />
+                      </div>
+                      <div class="register__height">
+                        <textarea
+                          name=""
+                          id=""
+                          placeholder="Nội dung"
+                          rows="3"
+                          class="form--control"
+                        ></textarea>
+                      </div>
+                      <div class="register__submit-box">
+                        <input
+                          type="submit"
+                          value="Gửi yêu cầu"
+                          class="register__submit"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!--END Register-->
+
+                <!--START Article-->
+                <div class="article">
+                  <h3 class="article__title">Bài viết nổi bật</h3>
+                  <div class="article__underline"></div>
+                  <div class="article__list">
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-1.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                    <div class="article__underscore"></div>
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-2.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-3.png.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                    <div class="article__underscore"></div>
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-4.png.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-5.png.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                    <div class="article__underscore"></div>
+                    <div class="article__list-box">
+                      <img src="./frontend/img/article-img-6.png.png" alt="" />
+                      <div class="article__content">
+                        <h4 class="article__heading">
+                          Hướng dẫn đăng ký thành lập hộ kinh doanh
+                        </h4>
+                        <span
+                          ><i
+                            class="fa-regular fa-clock clock-icon"
+                            style="color: #f21520"
+                          ></i
+                        ></span>
+                        <span style="color: #858585">16/08/2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--END Article-->
+
+                <!--START Service-menu-->
+                <div class="service-menu">
+                  <div class="service-menu__title">
+                    <h3 class="service-menu__heading">Danh mục dịch vụ</h3>
+                    <div class="service-menu__underline"></div>
+                  </div>
+                  <div class="service-menu__list">
+                    <h4 class="service-menu__item">Kế toán - Thuế</h4>
+                    <div class="service-menu__underscore"></div>
+                    <h4 class="service-menu__item">Kiểm soát nội bộ</h4>
+                    <div class="service-menu__underscore"></div>
+                    <h4 class="service-menu__item">
+                      Tư vấn quản lý doanh nghiệp
+                    </h4>
+                    <div class="service-menu__underscore"></div>
+                    <h4 class="service-menu__item">Tư vấn luật</h4>
+                    <div class="service-menu__underscore"></div>
+                    <h4 class="service-menu__item">Đào tạo</h4>
+                    <div class="service-menu__underscore"></div>
+                    <h4 class="service-menu__item">Sản phẩm</h4>
+                    <div class="service-menu__underscore"></div>
+                  </div>
+                </div>
+                <!--END Service-menu-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Tax service-->
+
+        <!--START Related-service-->
+        <div class="related-service">
+          <div class="related-service__container container">
+            <div class="related-service__wrap">
+              <h4 class="related-service__title">Dịch vụ liên quan</h4>
+              <div class="related-service--top">
+                <div class="related-service__box">
+                  <img
+                    class="related-service__img"
+                    src="./frontend/img/related-service-1.png"
+                    alt=""
+                  />
+                  <div class="related-service__content">
+                    <div class="related-service__content-box">
+                      <h5 class="related-service__heading">
+                        Dịch vụ kế toán trọn gói
+                      </h5>
+                      <p class="related-service__text">
+                        Nhằm đáp ứng nhu cầu quản trị của Doanh nghiệp và đảm
+                        bảo tuân thủ theo đúng quy định...
+                      </p>
+                      <div class="related-service__link">
+                        <a href="" class="related-service__sub">Xem chi tiết</a>
+                        <a href=""
+                          ><i
+                            class="fa-solid fa-arrow-right related-service__icon"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-service__box">
+                  <img
+                    class="related-service__img"
+                    src="./frontend/img/related-sevice-2.png"
+                    alt=""
+                  />
+                  <div class="related-service__content">
+                    <div class="related-service__content-box">
+                      <h5 class="related-service__heading">
+                        Dịch vụ kế toán trọn gói
+                      </h5>
+                      <p class="related-service__text">
+                        Nhằm đáp ứng nhu cầu quản trị của Doanh nghiệp và đảm
+                        bảo tuân thủ theo đúng quy định...
+                      </p>
+                      <div class="related-service__link">
+                        <a href="" class="related-service__sub">Xem chi tiết</a>
+                        <a href=""
+                          ><i
+                            class="fa-solid fa-arrow-right related-service__icon"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="related-service--bottom">
+                <div class="related-service__box">
+                  <img
+                    class="related-service__img"
+                    src="./frontend/img/related-service-3.png"
+                    alt=""
+                  />
+                  <div class="related-service__content">
+                    <div class="related-service__content-box">
+                      <h5 class="related-service__heading">
+                        Dịch vụ kế toán trọn gói
+                      </h5>
+                      <p class="related-service__text">
+                        Nhằm đáp ứng nhu cầu quản trị của Doanh nghiệp và đảm
+                        bảo tuân thủ theo đúng quy định...
+                      </p>
+                      <div class="related-service__link">
+                        <a href="" class="related-service__sub">Xem chi tiết</a>
+                        <a href=""
+                          ><i
+                            class="fa-solid fa-arrow-right related-service__icon"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="related-service__box">
+                  <img
+                    class="related-service__img"
+                    src="./frontend/img/related-service-4.png"
+                    alt=""
+                  />
+                  <div class="related-service__content">
+                    <div class="related-service__content-box">
+                      <h5 class="related-service__heading">
+                        Dịch vụ kế toán trọn gói
+                      </h5>
+                      <p class="related-service__text">
+                        Nhằm đáp ứng nhu cầu quản trị của Doanh nghiệp và đảm
+                        bảo tuân thủ theo đúng quy định...
+                      </p>
+                      <div class="related-service__link">
+                        <a href="" class="related-service__sub">Xem chi tiết</a>
+                        <a href=""
+                          ><i
+                            class="fa-solid fa-arrow-right related-service__icon"
+                            aria-hidden="true"
+                          ></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Related-service-->
+      </div>
+      <!--END Content-->
+
+      <!--START Footer-->
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="footer__background">
+              <div class="footer__company-info">
+                <div class="company-info__logo">
+                  <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+                </div>
+                <p class="company-info__text">
+                  Molestie nec, molestie libero in auctor <br />
+                  vels. Quis dictumst nulla risus curabitur <br />
+                  non dolor, pulvinar. Orci, pretium pretium <br />
+                  velit scelerisqueultrices.
+                </p>
+                <div class="company-info__sticker">
+                  <img src="./frontend/img/image 33.png" alt="" />
+                </div>
+              </div>
+              <div class="footer__company-contact">
+                <div class="company-contact__name">
+                  Công ty TNHH Tư vấn Quản lý Tài chính SAB
+                </div>
+                <div class="company-contact__box">
+                  <p class="company-contact__address">
+                    Địa chỉ: DV05-LK289, Khu đất dịch vụ Đào Đất Hàng Bè, -
+                    Phường Kiến Hưng - Quận Hà Đông - Hà Nội
+                  </p>
+                  <a href="tel:0868679028" class="company-contact__tel"
+                    >Số điện thoại: 0963561906</a
+                  >
+                  <a
+                    href="mailto:thanhtien4112006@gmail.com"
+                    class="company-contact__email"
+                    >Email: contact@sabfa.com.vn</a
+                  >
+                </div>
+              </div>
+              <div class="footer__company-support">
+                <div class="company-support__title">
+                  <div class="company-support__heading">Hỗ trợ khách hàng</div>
+                  <ul class="company-support__sub-heading">
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Tư vấn trực tuyến</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Hỏi đáp</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="company-support__following">
+                  <div class="company-support__following-title">
+                    Theo dõi chúng tôi qua
+                  </div>
+                  <ul class="company-support__following-app">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__company-link">
+                <div class="company-link__title">Link nhanh</div>
+                <ul class="company-link__item">
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Dịch vụ</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Đào tạo</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Sản phẩm</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Tin tức</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="container">
+            <div class="footer-end__wrap">
+              <div class="footer-end__copy">
+                &copy;2021 SAB. All Right Reserved
+              </div>
+              <div class="footer-end__title">Chính sách bảo mật thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <!--START Chat-->
+        <div class="chat">
+          <div class="chat__box-1">
+            <a href="tel:0868679028"
+              ><i class="fa-solid fa-phone-volume chat__icon phone"></i
+            ></a>
+          </div>
+          <div class="chat__box-2">
+            <a href=""
+              ><i class="fa-brands fa-facebook-messenger chat__icon mess"></i
+            ></a>
+          </div>
+
+          <a href=""
+            ><img
+              class="chat__icon-zalo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+            />
+          </a>
+
+          <div class="chat__box-3" id="backToTop">
+            <i class="fa-solid fa-arrow-up chat__icon"></i>
+          </div>
+        </div>
+        <!--END Chat-->
+      </div>
+      <!--END Footer-->
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./frontend/js/script.js"></script>
+</html>

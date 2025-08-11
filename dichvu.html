@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./frontend/css/style.css" />
+    <link rel="stylesheet" href="./frontend/css/dichvu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!--START Header-->
+      <div class="header">
+        <div class="header__top-wrapper">
+          <div class="header__container container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
+              </div>
+              <form action="">
+                <div class="header__search">
+                  <div class="header__search-border">
+                    <input
+                      type="text"
+                      placeholder="Nhập từ khóa tìm kiếm"
+                      class="header__input"
+                    />
+                    <div class="header__search-box">
+                      <div class="header__search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="header__contact">
+                <div class="header__contact--left">
+                  <img
+                    src="./frontend/img/mail.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">E-MAIL</span>
+                    <a
+                      class="header__contact-link"
+                      href="mailto:thanhtien412006@gmail.com"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                </div>
+
+                <div class="header__contact--right">
+                  <img
+                    src="./frontend/img/Group.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">LIÊN HỆ</span>
+                    <a class="header__contact-link" href="tel:0868679028"
+                      >0963561906</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__ham" id="toggle">
+                <i class="fas fa-bars" id="isOpen"></i>
+                <i class="fa-solid fa-xmark" id="isClose"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <div class="header__menu container">
+            <ul class="header__list">
+              <div class="header__menu-logo">
+                <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+              </div>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
+              <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
+              <li><a href="">DỊCH VỤ</a></li>
+              <li><a href="">ĐÀO TẠO</a></li>
+              <li><a href="">SẢN PHẨM</a></li>
+              <li><a href="">TIN TỨC</a></li>
+              <li><a href="">LIÊN HỆ</a></li>
+              <div class="header__traslate">
+                <div class="header__translate-viet">
+                  <a href=""><img src="./frontend/img/Mask Group.png" /></a>
+                  <span class="header__translate-name">Tiếng Việt</span>
+                </div>
+
+                <div class="header__translate-mi">
+                  <a href=""><img src="./frontend/img/Mask Group (1).png" /></a>
+                  <span class="header__translate-name">English</span>
+                </div>
+              </div>
+            </ul>
+            <div class="header__menu-traslate">
+              <a href=""><img src="./frontend/img/Mask Group.png" alt="" /></a>
+              <a href=""
+                ><img src="./frontend/img/Mask Group (1).png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Header-->
+
+      <!--START Banner-->
+      <div class="banner">
+        <div class="banner__background">
+          <div class="banner__container container">
+            <div class="banner__box">
+              <div class="banner__text">
+                <h1 class="banner__heading">Dịch vụ</h1>
+                <p class="banner__sub-heading">
+                  Với mong muốn trở thành đối tác tin cậy, góp phần vào thành
+                  công của Quý doanh nghiệp tại Việt Nam, chúng tôi luôn cải
+                  tiến để cung cấp dịch vụ tốt nhất và vượt qua được sự kỳ vọng
+                  của Quý khách hàng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Banner-->
+
+      <!--START Content-->
+      <div class="content">
+        <!--START Page-to-->
+        <div class="page-to">
+          <div class="page-to__container container">
+            <div class="page-to__wrap">
+              <i class="fa-solid fa-house page__icon-home"></i>
+              <i class="fa-solid fa-angles-right page__icon-next"></i>
+              <span class="page-to__heading">Dịch vụ</span>
+            </div>
+          </div>
+        </div>
+        <!--END Page-to-->
+
+        <!--START Service-->
+        <div class="service">
+          <div class="service__container container">
+            <div class="service__wrap">
+              <div class="service__introduce">
+                <div class="service__dichvu-title">
+                  <span class="service__dichvu-heading">OUR SERVICES</span>
+                  <h2 class="service__dichvu-sub-heading">Dịch vụ của SAB</h2>
+                  <div class="service__underline"></div>
+                </div>
+                <div class="service__dichvu-text">
+                  <p class="service__dichvu-text-box">
+                    Tại SAB, chúng tôi hiểu những thách thức của bạn trong việc
+                    quản lý kế toán – thuế, kiểm soát, luật. Đó là lý do tại sao
+                    chúng tôi thiết kế dịch vụ chuyên biệt của mình phù hợp với
+                    nhu cầu của khách hàng. Tùy thuộc vào yêu cầu của khách
+                    hàng, SAB cung cấp sự linh hoạt trong việc lựa chọn các dịch
+                    vụ đa dạng. Chúng tôi cũng đảm bảo chất lượng cao nhất cho
+                    các dịch vụ cung cấp, đúng như những gì chúng tôi đã hứa để
+                    bạn có thể yên tâm.
+                  </p>
+                  <div class="service__dichvu-contact">
+                    <a href="">Liên hệ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="service__img">
+                <img
+                  src="./frontend/img/service-dichvu-left.png"
+                  alt=""
+                  class="service__img-box"
+                />
+                <img
+                  src="./frontend/img/service-dichvu-right.png"
+                  alt=""
+                  class="service__img-box"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Service-->
+
+        <!--START Detailed service-->
+        <div class="detailed-service">
+          <div class="detailed-service__container container">
+            <div class="detailed-service__wrap">
+              <diiv class="detailed-service__content">
+                <div class="detailed-service__content-box">
+                  <div class="detailed-service__icon-box">
+                    <i class="fas fa-calendar detailed-service__icon"></i>
+                  </div>
+                  <p class="detailed-service__text">
+                    Tiết kiệm thời gian và chi phí tối đa
+                  </p>
+                  <p class="detailed-service__sub-text">
+                    Bạn sẽ có thể tiết kiệm đáng kể thời gian và chi phí dành
+                    cho các công việc quản trị như nhập dữ liệu, tính toán và
+                    kiểm tra báo cáo.
+                  </p>
+                </div>
+                <div class="detailed-service__content-box">
+                  <div class="detailed-service__icon-box">
+                    <i class="fas fa-gavel detailed-service__icon"></i>
+                  </div>
+                  <p class="detailed-service__text">
+                    Tuân thủ quy định pháp luật
+                  </p>
+                  <p class="detailed-service__sub-text">
+                    Chúng tôi thường xuyên cập nhật các quy định pháp luật mới
+                    nhất và đưa ra các lời khuyên chuyên nghiệp để bạn có thể
+                    yên tâm quản trị và tuân thủ quy định mới nhất.
+                  </p>
+                </div>
+                <div class="detailed-service__content-box">
+                  <div class="detailed-service__icon-box">
+                    <i class="fas fa-calendar-check detailed-service__icon"></i>
+                  </div>
+                  <p class="detailed-service__text">Chính các và kịp thời</p>
+                  <p class="detailed-service__sub-text">
+                    Với kinh nghiệm và tin thần phục vụ khách hàng tận tâm,
+                    chúng tôi cam kết cung cấp các báo cáo chính xác và kịp thời
+                    tuân thủ deadline của đội ngũ nhân viên
+                  </p>
+                </div>
+                <div class="detailed-service__content-box">
+                  <div class="detailed-service__icon-box">
+                    <i
+                      class="fas fa-exclamation-triangle detailed-service__icon"
+                    ></i>
+                  </div>
+                  <p class="detailed-service__text">
+                    Giảm thiểu rủi ro thấp nhất
+                  </p>
+                  <p class="detailed-service__sub-text">
+                    Chúng tôi cũng đưa ra các lời khuyên chuyên nghiệp và giải
+                    pháp áp dụng trong thực tế để khách hàng giảm thiểu rủi ro
+                    và tiết kiệm thuế.
+                  </p>
+                </div>
+              </diiv>
+              <div class="content__heading">OUR SERVICE</div>
+              <div class="content__sub-heading">Dịch vụ của chúng tôi</div>
+              <div class="content__underline"></div>
+            </div>
+          </div>
+        </div>
+        <!--END  Detailed service-->
+
+        <!--START Staff-->
+        <div class="staff" id="staff">
+          <div class="staff__container container">
+            <div class="staff__wrap">
+              <div class="staff__box--left">
+                <img
+                  class="staff__img"
+                  src="./frontend/img/staff-img.png"
+                  alt=""
+                />
+              </div>
+              <div class="staff__box--right">
+                <h3 class="staff__title">KẾ TOÁN - THUẾ</h3>
+                <p class="staff__sub-title">
+                  Chuyên gia dịch vụ và tư vấn thuế
+                </p>
+                <div class="staff__list">
+                  <div class="staff__list-box">
+                    <h3 class="staff__list-title">
+                      Dịch vụ soát tuân thủ thuế
+                    </h3>
+                    <div class="staff__icon-box">
+                      <a href="./CT-dichvu.html">
+                        <i
+                          class="fa-solid fa-arrow-right staff__icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="staff__list-box">
+                    <h3 class="staff__list-title">
+                      Dịch vụ kế toán thuế trọn gói
+                    </h3>
+                    <div class="staff__icon-box">
+                      <a href="">
+                        <i
+                          class="fa-solid fa-arrow-right staff__icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="staff__list-box">
+                    <h3 class="staff__list-title">
+                      Dịch vụ hỗ trợ thanh kiểm tra thuế
+                    </h3>
+                    <div class="staff__icon-box">
+                      <a href="">
+                        <i
+                          class="fa-solid fa-arrow-right staff__icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="staff__list-box">
+                    <h3 class="staff__list-title">Dịch vụ hoàn thuế</h3>
+                    <div class="staff__icon-box">
+                      <a href="">
+                        <i
+                          class="fa-solid fa-arrow-right staff__icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="staff__list-box">
+                    <h3 class="staff__list-title">Dịch vụ QTT TNCN</h3>
+                    <div class="staff__icon-box">
+                      <a href="">
+                        <i
+                          class="fa-solid fa-arrow-right staff__icon"
+                          aria-hidden="true"
+                        ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Staff-->
+
+        <!--START controll-->
+        <div class="controll" id="controll">
+          <div class="controll__container container">
+            <div class="controll__wrap">
+              <div class="controll__title">
+                <h3 class="controll__heading">KIỂM SOÁT NỘI BỘ</h3>
+                <p class="controll__sub-heading">
+                  Tối ưu hóa hệ thống kiểm soát nội bộ, ngăn ngừa rủi ro trong
+                  quản trị hoạt động doanh nghiệp
+                </p>
+              </div>
+              <div class="controll__content">
+                <div class="controll--left">
+                  <div class="controll__img">
+                    <div class="controll__background--left">
+                      <div class="controll__img-box">
+                        <div class="controll__topline"></div>
+                        <p class="controll__text">
+                          Giúp cho doanh nghiệp dễ dàng đạt được các mục tiêu đề
+                          ra nhờ vào việc áp dụng các phương pháp, thiết kế các
+                          hệ thống và nâng các quy trình quản lý rủi ro, kiểm
+                          soát và quản trị.
+                        </p>
+                        <div class="controll__contact">
+                          <a href="">Xem chi tiết</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controll__sub">
+                    <div class="controll__underline"></div>
+                    <p class="controll__sub">Kiểm toán nội bộ</p>
+                  </div>
+                </div>
+                <div class="controll--right">
+                  <div class="controll__img">
+                    <div class="controll__background--right">
+                      <div class="controll__img-box"></div>
+                    </div>
+                  </div>
+                  <div class="controll__sub">
+                    <div class="controll__underline"></div>
+                    <p class="controll__sub"></p>
+                      Kiểm soát báo cáo tài chính nội bộ
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END controll-->
+
+        <!--START consulting-->
+        <div class="consulting">
+          <!--START business consulting-->
+          <div class="business-consulting" id="business-consulting">
+            <div class="business-consulting__container container">
+              <div class="business-consulting__wrap">
+                <div class="business-consulting__title">
+                  <h3 class="business-consulting__heading">TƯ VẤN DOANH NGHIỆP</h3>
+                  <p class="business-consulting__sub-heading">Cung cấp giải pháp quản lý hiệu quả và thiết thực phù hợp với mô hình hoạt động của doanh nghiệp</p>
+                </div>
+                <div class="business-consulting__content">
+                  <div class="business-consulting__introduce">
+                    <h4 class="business-consulting__introduce-title">Tư vấn chuyển đổi số</h4>
+                    <p class="business-consulting__introduce-text">Là hoạt động đảm bảo, tư vấn độc lập nhằm gia tăng giá trị và hoạt động kinh doanh, đặc biệt là hệ thống kiểm soát nội bộ của doanh nghiệp. Họ giúp cho doanh nghiệp dễ dàng đạt được các mục</p>
+                    <div class="business-consulting__contact">
+                      <a href="">Xem chi tiết</a>
+                    </div>
+                  </div>
+                  <div class="business-consulting__img">
+                    <img src="./frontend/img/business-consulting-img.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END business consulting-->
+
+          <!--START rule consulting-->
+          <div class="rule-consulting" id="rule-consulting">
+            <div class="rule-consulting__container container">
+              <div class="rule-consulting__wrap">
+                <div class="rule-consulting--left">
+                  <h3 class="rule-consulting__title staff__title">TƯ VẤN LUẬT</h3>
+                  <p class="rule-consulting__sub-title staff__sub-title">
+                    Bảo vệ quyền và lợi ích hợp pháp của doanh nghiệp
+                  </p>
+                  <div class="rule-consulting__list staff__list">
+                    <div class="rule-consulting__list-box staff__list-box">
+                      <h3 class="rule-consulting__list-title staff__list-title">
+                        Tư vấn thành lập doanh nghiệp
+                      </h3>
+                      <div class="staff__icon-box">
+                        <a href="">
+                          <i
+                            class="fa-solid fa-arrow-right staff__icon"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="staff__list-box">
+                      <h3 class="staff__list-title">
+                        Tư vấn thành lập văn phòng đại diện
+                      </h3>
+                      <div class="staff__icon-box">
+                        <a href="">
+                          <i
+                            class="fa-solid fa-arrow-right staff__icon"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="staff__list-box">
+                      <h3 class="staff__list-title">
+                        Tư vấn thành lập chi nhánh
+                      </h3>
+                      <div class="staff__icon-box">
+                        <a href="">
+                          <i
+                            class="fa-solid fa-arrow-right staff__icon"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="staff__list-box">
+                      <h3 class="staff__list-title">Tư vấn thay đổi đăng ký kinh doanh</h3>
+                      <div class="staff__icon-box">
+                        <a href="">
+                          <i
+                            class="fa-solid fa-arrow-right staff__icon"
+                            aria-hidden="true"
+                          ></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rule-consulting--right">
+                  <div class="rule-consulting__img--left">
+                    <img class="rule-consulting__img" src="./frontend/img/rule-consulting-img-1.png" alt="">
+                    <img class="rule-consulting__img" src="./frontend/img/rule-consulting-img-2.png" alt="">
+                  </div>
+                  <div class="rule-consulting__img--right">
+                    <img class="rule-consulting__img" src="./frontend/img/rule-consulting-img-3.png" alt="">
+                    <img class="rule-consulting__img" src="./frontend/img/rule-consulting-img-4.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END rule consulting-->
+        </div>
+        <!--END consulting-->
+
+        <!--START Contact-->
+        <div class="contact">
+          <div class="contact__container container">
+            <div class="contact__wrap">
+              <div class="contact__box">
+                <div class="contact__title">
+                  <div class="contact__heading">Đăng ký tư vấn</div>
+                  <p class="contact__sub-heading">
+                    Đăng ký để có thể nhận thông tin tư vấn nhanh chóng và ưu
+                    đãi hấp dẫn của chúng tôi.
+                  </p>
+                </div>
+                <form action="" class="contact__from">
+                  <div class="contact__row">
+                    <div class="contact__col--top">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Họ và tên"
+                        id=""
+                        class="form--half"
+                      />
+
+                      <input
+                        type="email"
+                        name=""
+                        placeholder="E-mail"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact__col--bottom">
+                      <input
+                        type="tel"
+                        name=""
+                        placeholder="Số điện thoại"
+                        id=""
+                        class="form--half"
+                      />
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Chủ đề"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact--col-height">
+                      <textarea
+                        name=""
+                        rows="1"
+                        id=""
+                        placeholder="Nội dung"
+                        class="form--control"
+                      ></textarea>
+                    </div>
+                    <input
+                      type="submit"
+                      value="Gửi yêu cầu"
+                      class="contact__submit"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Contact-->
+      </div>
+      <!--END Content-->
+
+       <!--START Footer-->
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="footer__background">
+              <div class="footer__company-info">
+                <div class="company-info__logo">
+                  <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+                </div>
+                <p class="company-info__text">
+                  Molestie nec, molestie libero in auctor <br />
+                  vels. Quis dictumst nulla risus curabitur <br />
+                  non dolor, pulvinar. Orci, pretium pretium <br />
+                  velit scelerisqueultrices.
+                </p>
+                <div class="company-info__sticker">
+                  <img src="./frontend/img/image 33.png" alt="" />
+                </div>
+              </div>
+              <div class="footer__company-contact">
+                <div class="company-contact__name">
+                  Công ty TNHH Tư vấn Quản lý Tài chính SAB
+                </div>
+                <div class="company-contact__box">
+                  <p class="company-contact__address">
+                    Địa chỉ: DV05-LK289, Khu đất dịch vụ Đào Đất Hàng Bè, -
+                    Phường Kiến Hưng - Quận Hà Đông - Hà Nội
+                  </p>
+                  <a href="tel:0868679028" class="company-contact__tel"
+                    >Số điện thoại: 0963561906</a
+                  >
+                  <a
+                    href="mailto:thanhtien4112006@gmail.com"
+                    class="company-contact__email"
+                    >Email: contact@sabfa.com.vn</a
+                  >
+                </div>
+              </div>
+              <div class="footer__company-support">
+                <div class="company-support__title">
+                  <div class="company-support__heading">Hỗ trợ khách hàng</div>
+                  <ul class="company-support__sub-heading">
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Tư vấn trực tuyến</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Hỏi đáp</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="company-support__following">
+                  <div class="company-support__following-title">
+                    Theo dõi chúng tôi qua
+                  </div>
+                  <ul class="company-support__following-app">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__company-link">
+                <div class="company-link__title">Link nhanh</div>
+                <ul class="company-link__item">
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Dịch vụ</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Đào tạo</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Sản phẩm</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Tin tức</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="container">
+            <div class="footer-end__wrap">
+              <div class="footer-end__copy">
+                &copy;2021 SAB. All Right Reserved
+              </div>
+              <div class="footer-end__title">Chính sách bảo mật thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <!--START Chat-->
+        <div class="chat">
+          <div class="chat__box-1">
+            <a href="tel:0868679028"
+              ><i class="fa-solid fa-phone-volume chat__icon phone"></i
+            ></a>
+          </div>
+          <div class="chat__box-2">
+            <a href=""
+              ><i class="fa-brands fa-facebook-messenger chat__icon mess"></i
+            ></a>
+          </div>
+
+          <a href=""
+            ><img
+              class="chat__icon-zalo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+            />
+          </a>
+
+          <div class="chat__box-3" id="backToTop">
+            <i class="fa-solid fa-arrow-up chat__icon"></i>
+          </div>
+        </div>
+        <!--END Chat-->
+      </div>
+      <!--END Footer-->
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./frontend/js/script.js"></script>
+</html>

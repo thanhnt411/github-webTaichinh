@@ -26,6 +26,7 @@
 }
 
 .header__top {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -437,6 +438,10 @@
 }
 
 .about__video-background {
+     background-color: #f21520;
+    width: 33.33%;
+    height: 318px;
+    margin-bottom: -30px;
     position: absolute;
     right: 0;
     z-index: 0; 
@@ -451,6 +456,7 @@
 .about__video-content {
     margin-top: -40px;
     margin-bottom: 24px;
+    max-width: 505px;
 }
 
 .about__play {
@@ -485,13 +491,6 @@
 
 .about__play-text {
     font-size: 16px;
-}
-
-.about__video-background {
-    background-color: #f21520;
-    width: 33.33%;
-    height: 318px;
-    margin-bottom: -30px;
 }
 
 .about__video-title {
@@ -741,7 +740,8 @@
     margin-bottom: 40px;
 }
 
-.product__wrap--bottom {
+.product__wrap--bottom.reverse {
+    flex-direction: row-reverse;
     background: linear-gradient(to right, #f5f6f9 70%, #ffffff 30%);
 }
 
@@ -753,8 +753,18 @@
     margin-left: 60px;
 }
 
+.product__img {
+    max-width: 552px;
+}
+
 .product__box {
    display: flex;
+   padding: 45px 0;
+}
+
+.product__box-2.reverse {
+   display: flex;
+   flex-direction: row-reverse;
    padding: 45px 0;
 }
 
@@ -866,9 +876,13 @@
 
 /*START Feature*/
 .feature {
+    width: 100%;
     margin-bottom: 80px;
 }
 
+.feature__wrap {
+    width: 100%;
+}
 .feature__wrap--top {
     display: flex;
     justify-content: space-between;
@@ -914,6 +928,7 @@
 }
 
 .feature__img {
+    max-width: 540px;
     position: relative;
     z-index: 1;
 }
@@ -1006,27 +1021,31 @@
 }
 
 .contact__from {
-    max-width: 60%;
+    width: 60%;
+}
+
+.contact__row {
+    max-width: 446px;
 }
 
 .contact__col--top, .contact__col--bottom, .contact--col-height {
-    margin-bottom: 24px;    
+    margin-bottom: 24px;
+    width: 100%;  
 }
 
-.contact__col {
-    width: 100%;
+.contact__col--top, .contact__col--bottom {
     display: flex;
-    gap: 14px;
+    gap: 14px;  
 }
 
 .form--half {
+    width: 50%;
     background-color: rgba(74, 144, 226, 0.5);
     backdrop-filter: blur(8px);
     border: none;
     padding: 8px 17px;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 5px;
-    font-size: 17px;
 }
 
 input::placeholder {
@@ -1034,16 +1053,15 @@ input::placeholder {
     font-size: 17px;
 }
 
-.contact--col-height {
-    display: flex;
-}
 .form--control {
+    width: 100%;
     background-color: rgba(74, 144, 226, 0.5);
     backdrop-filter: blur(8px);
     border: none;
     padding: 8px 17px;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 5px;
+    font-size: 40px; 
 }
 
 .contact__submit {
@@ -1054,10 +1072,6 @@ input::placeholder {
     border-radius: 5px;
     border: none;
     font-size: 18px;
-}
-
-.form--control {
-    font-size: 40px;    
 }
 
 textarea.form--control {
@@ -1483,6 +1497,10 @@ textarea::placeholder {
         display: none;
     }
 
+    .about__video-content {
+        width: 100%;
+    }
+
     .about__video {
         width: 100%;
         text-align: center;
@@ -1549,11 +1567,12 @@ textarea::placeholder {
         margin-bottom: 40px;
     }
 
-    .product__wrap--bottom {
+    .product__wrap--bottom.reverse {
         background: #f4f6f9;
     }
 
     .product__background--top {
+         width: 100%;
         margin-right: 0;
     }
 
@@ -1561,7 +1580,11 @@ textarea::placeholder {
         margin-left: 0;
     }
 
-    .product__box {
+    .product__img {
+        width: 100%;
+    }
+
+    .product__box, .product__box-2.reverse {
         display: block;
         padding: 0 0;
     }
@@ -1610,6 +1633,7 @@ textarea::placeholder {
     }
     
     .feature__wrap--bottom {
+        width: 100%;
         display: block;
     } 
 
@@ -1617,6 +1641,9 @@ textarea::placeholder {
         width: 100%;
     }
 
+    .feature__img {
+        width: 100%;
+    }
     .feature__box--right {
         padding: 0 5px;
     }
@@ -1634,6 +1661,30 @@ textarea::placeholder {
         width: 50%;
     }
     /*END Feature*/
+
+    /*START Contact*/
+    .contact {
+        margin-bottom: 40px;
+    }
+
+    .contact__box {
+        display: block;
+    }
+
+    .contact__title {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact__row {
+        width: 230px;
+    }
+
+    
+    .form--half {
+        padding: 8px 5px;
+    }
+    /*END Contact*/
 
     /*START Footer*/
     .footer-body {
