@@ -52,6 +52,16 @@ var swiperTraining = new Swiper(".mySwiper-training", {
         nextEl: ".swiper-button-next3",
         prevEl: ".swiper-button-prev3",
     },
+
+    breakpoints: {
+        0: { //từ 0 trở lên
+            slidesPerView: 1
+        },
+
+        768: { //từ 768 trở lên
+            slidesPerView: 4
+        },
+    }
 });
 
 var swiperFeedback = new Swiper(".mySwiper-feedback", {
@@ -75,6 +85,17 @@ var swiperFeedback = new Swiper(".mySwiper-feedback", {
         nextEl: ".swiper-button-next2",
         prevEl: ".swiper-button-prev2",
     },
+
+    breakpoints: {
+        0: { //từ 0 trở lên
+            slidesPerView: 1
+        },
+
+        768: { //từ 768 trở lên
+            slidesPerView: 4
+        },
+    }
+
 });
 
  var swiperPartners = new Swiper(".mySwiper-partners", {

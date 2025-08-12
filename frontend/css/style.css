@@ -221,7 +221,6 @@
     padding: 55px 50px;
     max-width: 520px;
     margin-bottom: 50px;
-
 }
 
 .banner__box--third {
@@ -843,6 +842,7 @@
 .partners__box-info {
     max-width: 100%;
     display: flex;
+    gap: 10px;
 }
 
 .partners__box-info--left, .partners__box-info--right {
@@ -870,6 +870,7 @@
 }
 
 .partners__slide img {
+    height: 72px;
     max-width: 100%;
 }
 /*END Partners*/
@@ -1723,6 +1724,10 @@ textarea::placeholder {
 
     .footer-end__copy {
         margin-bottom: 10px;
+    }
+
+    .chat {
+        right: 10px;
     }
     /*END Footer*/
 }

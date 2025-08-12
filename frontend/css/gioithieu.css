@@ -1,9 +1,10 @@
-.banner__gioithieu {
+.banner-gioithieu {
     width: 100%;
-    height: 100vh;
+    height: 450px;
     background-image: url("../img/banner-gioithieu.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    margin-top: 125px;
 }
 
 /*start Page to*/
@@ -158,6 +159,10 @@
     width: 100%;
 }
 
+.section__img--top-box {
+    max-width: 499px;
+}
+
 .section__img--bottom {
     width: 100%;
     display: flex;
@@ -165,7 +170,7 @@
 }
 
 .section__img--bottom-box {
-    width: 50%;
+    max-width: 239px;
 }
 
 .section__heading {
@@ -265,4 +270,100 @@
 }
 /*END Action*/
 
+/*Responsive*/
+@media(max-width: 768px) {
+    .banner-gioithieu {
+        background-size: cover;
+    }
+
+    /*START About*/
+    .about__wrap.reverse {
+        display: block;
+    }
+
+    .about__introduce {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .about__company-box {
+        width: 100%;
+    }
+
+    .about__img {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .about__company-heading {
+        font-size: 26px;
+    }
+    /*END About*/
+    
+    /*START Leader*/
+    .leader__wrap {
+        display: block;
+    }
+
+    .leader__introduce {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    /*END Leader*/
+
+    /*START Section*/
+    .section {
+        padding-bottom: 50px;
+    }
+    .section__wrap {
+        display: block;
+        padding-top: 0;
+    }
+
+    .section__img, .section__content {
+        width: 100%;
+    }
+
+    .section__img {
+        margin-bottom: 30px;
+    }
+
+    .section__img--top-box {
+        width: 100%;
+    }
+
+    .section__img--bottom {
+        gap: 0;
+    }
+
+    .section__img--bottom-box {
+        max-width: 50%;
+    }
+
+    .section__content {
+        padding: 0 10px;
+    }
+
+    .section__heading {
+        font-size: 22px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .section__text {
+        text-align: justify;
+    }
+    /*END Section*/
+
+    /*START Action*/
+    .action__wrap {
+        display: block;
+    }
+
+    .action__box {
+        width: 100%;
+    }
+    /*END Action*/
+}   
 

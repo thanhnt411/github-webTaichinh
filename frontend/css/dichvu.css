@@ -1,11 +1,11 @@
 /*START Banner*/
 .banner__background {
     width: 100%;
-    height: 100vh;
+    height: 450px;
+    background-color: #f4f6f4;
     background-image: url("../img/banner-dichvu.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
     padding-top: 100px;
 }
 
@@ -53,8 +53,7 @@
 .service__introduce {
     width: 50%;
     position: relative;
-    z-index: 1;
-    
+    z-index: 1;  
 }
 
 .service__dichvu-title {
@@ -193,11 +192,16 @@
     width: 100%;
     padding: 48px 0;
     display: flex;
+    flex-direction: row-reverse;
     gap: 52px;
 }
 
 .staff__box--left {
     max-width: 50%;
+}
+
+.staff__img {
+    width: 100%;
 }
 
 .staff__box--right {
@@ -480,4 +484,152 @@
 }
 /*START rule consulting*/
 
+@media(max-width: 768px) {
+     .banner__background {
+        background-size: cover;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__box {
+        padding: 30px 60px;
+    }
+
+    /*START Service*/
+    .service {
+        padding: 74px 3px 0;
+    }
+
+    .service__wrap {
+        display: block;
+    }
+
+    .service__introduce {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .service__img {
+        max-width: 100%;
+        gap: 0;
+    }
+    /*END Service*/
+
+    /*START Detailed service*/
+    .detailed-service__content {
+        display: block;
+    }
+
+    .detailed-service__content-box {
+        width: 100%;
+    }
+    /*END Detailed service*/
+
+    /*START Staff*/
+    .staff__wrap {
+        padding: 20px 0 0 ;
+        display: block;
+    }
+
+    .staff__box--left {
+        max-width: 100%;
+    }
+
+    .staff__img-box {
+        width: 100%;
+    }
+
+    .staff__box--right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    /*END Staff*/
+
+    /*START Controll*/   
+    .controll__title {
+        padding: 0 20px;
+    }
+
+    .controll__content {
+        display: block;
+    }
+
+    .controll--left, .controll--right {
+        width: 100%;
+    }
+
+    .controll--left {
+        margin-bottom: 30px;
+    }
+
+    .controll__img {
+        background-color: #ffffff;
+    }
+
+    .controll__background--left, .controll__background--right {
+        right: 0;
+        bottom: 0;
+        padding: 73px 95px;
+    }
+    /*END Controll*/
+
+    /*START Business consulting*/
+    .business-consulting {
+        background-color: #ffffff;
+    }
+
+    .business-consulting__title {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .business-consulting__content {
+        display: block;
+    }
+
+    .business-consulting__introduce {
+        width: 100%;
+        padding: 42px 30px;
+        top: 0;
+    }
+
+    .business-consulting__sub-heading {
+        margin-bottom: 0;
+    }
+
+    .business-consulting__img {
+       display: none;
+    }
+    /*END Business consulting*/
+
+    /*START Rule consulting*/
+    .rule-consulting {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .rule-consulting__wrap {
+        display: block;
+    }
+
+    .rule-consulting--left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .rule-consulting--right {
+        width: 100%;
+        display: block;
+    }
+
+    .rule-consulting__img--left, .rule-consulting__img--right {
+        display: none;
+    }
+    /*END Rule consulting*/
+}
 

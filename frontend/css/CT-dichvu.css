@@ -1,9 +1,9 @@
 .banner__background {
     width: 100%;
-    height: 100vh;
+    height: 450px;
     background-image: url("../img/CT-dichvu-banner.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding-top: 100px;
 }
 
@@ -287,7 +287,6 @@ input::placeholder {
 
 .related-service__img {
     max-width: 270px;
-    height: 181px;
 }
 
 .related-service__content {
@@ -299,7 +298,7 @@ input::placeholder {
     color: #2f2f2f;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: px;
+    margin-bottom: 16px;
 }
 
 .related-service__text {
@@ -324,4 +323,116 @@ input::placeholder {
 }
 /*END Related service*/
 
+@media(max-width: 768px) {
+    /*START Banner*/
+     .banner__background {
+        background-size: cover;
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__box {
+        padding: 30px 60px;
+    }
+    /*END Banner*/
+
+    /*START Page to*/
+    .page-CT__wrap {
+        max-width: 300px;
+        padding: 10px 10px;
+        margin-bottom: 0;
+    }
+    /*END Page to*/
+
+    /*START Tax-service*/
+    .tax-service__wrap {
+        padding: 64px 0 51px;
+        display: block;
+    }
+
+    .tax-service--left {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tax-service__img {
+        max-width: 100%;
+    }
+
+    .tax-service__introduce {
+        width: 100%;
+        display: block;
+    }
+
+    .tax-service__introduce-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .tax-service__contact {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /*START Register*/
+    .register {
+        max-width: 100%;
+    }
+
+    .regiset__row {
+        max-width: 100%;
+    }   
+    /*END Register*/
+
+    /*START Article*/
+    .article {
+        padding: 0 20px;
+    }
+    /*END Article*/
+    /*END Tax-service*/
+
+    /*START Related service*/
+    .related-service {
+        background-color: #ffffff;
+    }
+    .related-service__wrap {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .related-service__title {
+        text-align: center;
+    }
+
+    .related-service--top, .related-service--bottom {
+        width: 100%;
+        display: block;
+    }
+
+    .related-service--top {
+        margin-bottom: 0;
+    }
+
+    .related-service__box {
+        width: 100%;
+        display: block; 
+        text-align: center;
+    }
+
+    .related-service__img {
+        width: 100%;
+    }
+
+    .related-service__content {
+        border-bottom: none;
+        padding: 29px 16px;
+    }
+
+    .related-service__link {
+        display: block;
+    }
+    /*END Related service*/
+}
 

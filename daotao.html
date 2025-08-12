@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./frontend/css/style.css" />
+    <link rel="stylesheet" href="./frontend/css/dichvu.css" />
+    <link rel="stylesheet" href="./frontend/css/daotao.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!--START Header-->
+      <div class="header">
+        <div class="header__top-wrapper">
+          <div class="header__container container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img src="./frontend/img/SAB LOGO-01 1.png" alt="LOGO" />
+              </div>
+              <form action="">
+                <div class="header__search">
+                  <div class="header__search-border">
+                    <input
+                      type="text"
+                      placeholder="Nhập từ khóa tìm kiếm"
+                      class="header__input"
+                    />
+                    <div class="header__search-box">
+                      <div class="header__search-icon">
+                        <i class="fa-solid fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="header__contact">
+                <div class="header__contact--left">
+                  <img
+                    src="./frontend/img/mail.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">E-MAIL</span>
+                    <a
+                      class="header__contact-link"
+                      href="mailto:thanhtien412006@gmail.com"
+                      >contact@sabfa.com.vn</a
+                    >
+                  </div>
+                </div>
+
+                <div class="header__contact--right">
+                  <img
+                    src="./frontend/img/Group.png"
+                    class="header__contact-icon"
+                  />
+                  <div class="header__contact-text">
+                    <span class="header__contact-title">LIÊN HỆ</span>
+                    <a class="header__contact-link" href="tel:0868679028"
+                      >0963561906</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="header__ham" id="toggle">
+                <i class="fas fa-bars" id="isOpen"></i>
+                <i class="fa-solid fa-xmark" id="isClose"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__menu-wrapper">
+          <div class="header__menu container">
+            <ul class="header__list">
+              <div class="header__menu-logo">
+                <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+              </div>
+              <li><a href="./index.html">TRANG CHỦ</a></li>
+              <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
+              <li><a href="./dichvu.html">DỊCH VỤ</a></li>
+              <li><a href="./daotao.html">ĐÀO TẠO</a></li>
+              <li><a href="">SẢN PHẨM</a></li>
+              <li><a href="">TIN TỨC</a></li>
+              <li><a href="">LIÊN HỆ</a></li>
+              <div class="header__traslate">
+                <div class="header__translate-viet">
+                  <a href=""><img src="./frontend/img/Mask Group.png" /></a>
+                  <span class="header__translate-name">Tiếng Việt</span>
+                </div>
+
+                <div class="header__translate-mi">
+                  <a href=""><img src="./frontend/img/Mask Group (1).png" /></a>
+                  <span class="header__translate-name">English</span>
+                </div>
+              </div>
+            </ul>
+            <div class="header__menu-traslate">
+              <a href=""><img src="./frontend/img/Mask Group.png" alt="" /></a>
+              <a href=""
+                ><img src="./frontend/img/Mask Group (1).png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Header-->
+
+      <!--START Banner-->
+      <div class="banner">
+        <div class="banner__background">
+          <div class="banner__container container">
+            <div class="banner__box">
+              <div class="banner__text">
+                <h1 class="banner__heading">Dịch vụ</h1>
+                <p class="banner__sub-heading">
+                  Với mong muốn trở thành đối tác tin cậy, góp phần vào thành
+                  công của Quý doanh nghiệp tại Việt Nam, chúng tôi luôn cải
+                  tiến để cung cấp dịch vụ tốt nhất và vượt qua được sự kỳ vọng
+                  của Quý khách hàng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--END Banner-->
+
+      <!--START Content-->
+      <div class="content">
+        <!--START Page-to-->
+        <div class="page-to">
+          <div class="page-to__container container">
+            <div class="page-to__wrap">
+              <i class="fa-solid fa-house page__icon-home"></i>
+              <i class="fa-solid fa-angles-right page__icon-next"></i>
+              <span class="page-to__heading">Đào tạo</span>
+            </div>
+          </div>
+        </div>
+        <!--END Page-to-->
+
+        <!--START Training Course-->
+        <div class="training-course">
+          <div class="training-course__container container">
+            <div class="training-course__top">
+              <div class="training-course--left">
+                <div class="training-course__title service__dichvu-title">
+                  <span class="service__dichvu-heading"
+                    >OUR TRAINING COURSES</span
+                  >
+                  <h2 class="service__dichvu-sub-heading">
+                    Các khóa đào tạo của SAB
+                  </h2>
+                  <div class="service__underline"></div>
+                </div>
+                <p class="training-course__text">
+                  Trung tâm đào tạo thực hành SAB chuyên cung cấp các khóa đào
+                  tạo
+                </p>
+                <div class="training-course__list">
+                  <ul class="training-course__list-box">
+                    <li>
+                      <div class="training-course__item">
+                        <i
+                          class="fa-solid fa-angles-right page__icon-next"
+                          style="color: #244691"
+                        ></i>
+                        <a href="./CT-daotao-gioithieu.html"
+                          >Kế toán thực hành Excel</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <div class="training-course__item">
+                        <i
+                          class="fa-solid fa-angles-right page__icon-next"
+                          style="color: #244691"
+                        ></i>
+                        <a href="">Kế toán thực hành PMKT</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="training-course__item">
+                        <i
+                          class="fa-solid fa-angles-right page__icon-next"
+                          style="color: #244691"
+                        ></i>
+                        <a href="">Kế toán thuế chuyên sâu</a>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="training-course__list-box">
+                    <li>
+                      <div class="training-course__item">
+                        <i
+                          class="fa-solid fa-angles-right page__icon-next"
+                          style="color: #244691"
+                        ></i>
+                        <a href="">Kế toán tổng hợp</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="training-course__item">
+                        <i
+                          class="fa-solid fa-angles-right page__icon-next"
+                          style="color: #244691"
+                        ></i>
+                        <a href="">Kiểm toán NB/KSNB</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <p class="training-course__text">Với mục tiêu giúp học viên</p>
+                <div class="training-course__text-box">
+                  <div class="training-course--list">
+                    <div class="training-course__item">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="training-course__text">
+                        Tiếp xúc công việc kế toán, kiểm toán thực tế, nâng cao
+                        nghiệp vụ, học hỏi kinh nghiệm từ những kế toán trưởng
+                        đi trước
+                      </p>
+                    </div>
+                    <div class="training-course__item">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="training-course__text">
+                        Đào tạo ra những kế toán, kiểm toán có nghiệp vụ chuyên
+                        môn cao, có thể tự mình lên được báo cáo thuế, báo cáo
+                        tài chính một cách thành thạo
+                      </p>
+                    </div>
+                    <div class="training-course__item">
+                      <i
+                        class="fa-regular fa-circle-check"
+                        style="color: #1a4b9a"
+                      ></i>
+                      <p class="training-course__text">
+                        Hỗ trợ những nhà quản lý doanh nghiệp, lãnh đạo có thể
+                        quản lý tốt bộ máy kế toán, kiểm soát của doanh nghiệp
+                        mình, cho biết họ làm đúng hay sai
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training-course--right">
+                <div class="training-course__img--left">
+                  <img
+                    class="training-course__img"
+                    src="./frontend/img/training-course-img-1.png"
+                    alt=""
+                  />
+                  <img
+                    class="training-course__img"
+                    src="./frontend/img/training-course-img-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="training-course__img--right">
+                  <img
+                    class="training-course__img"
+                    src="./frontend/img/training-course-img-3.png"
+                    alt=""
+                  />
+                  <img
+                    class="training-course__img"
+                    src="./frontend/img/training-course-img-4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="training-course__bottom">
+              <img
+                class="training-course__bottom-box"
+                src="./frontend/img/training-course-bottom-1.png"
+                alt=""
+              />
+              <div class="training-course__bottom-box">
+                <div class="training-course__content-1">
+                  <div class="training-course__icon-box">
+                    <img
+                      src="./frontend/img/training-course-icon-1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="training-course__text-box">
+                    Đây là môi trường giúp học viên thành thạo tay nghề, thành
+                    thạo xử lý công việc trong thực tế. Trung tâm đào tạo thực
+                    hành SAB đã giúp rất nhiều học viên có bản lĩnh, kiên định,
+                    tự tin và thành công với ước mơ làm Kế toán trưởng, Kiểm
+                    soát nội bộ, nhà quản lý hay là mở doanh nghiệp.
+                  </p>
+                </div>
+              </div>
+              <img
+                src="./frontend/img/training-course-bottom-2.png"
+                alt=""
+                class="training-course__bottom-box"
+              />
+              <div class="training-course__bottom-box">
+                <div class="training-course__content-2">
+                  <div class="training-course__icon-box">
+                    <img
+                      src="./frontend/img/training-course-icon-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <p class="training-course__text-box">
+                    Chương trình đào tạo kế toán, kiểm toán thực tế tại SAB luôn
+                    được thay đổi và cập nhật theo luật thuế - chuẩn mực kế toán
+                    mới nhất, bên cạnh đó cũng bao gồm tất cả các nghiệp vụ kinh
+                    tế phát sinh đang xảy ra tại doanh nghiệp. Sau khi kết thúc
+                    khóa học học viên có thể tự tin với kỹ năng, nghiệp vụ xử lý
+                    của mình.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Training Course-->
+
+        <!--START Training-menu-->
+        <div class="training-menu">
+          <div class="training-menu__container container">
+            <div class="content__heading">OUR TRAINING COURSE</div>
+            <div class="content__sub-heading">
+              Danh mục các khóa đào tạo của SAB
+            </div>
+            <div class="content__underline"></div>
+            <div class="training-menu__top">
+              <div class="training-menu__box">
+                <div class="training-menu-img-1">
+                  <div class="training-menu__dt">
+                    <div class="training-menu__date">
+                      <i
+                        class="fa-regular fa-calendar"
+                        style="color: #ffffff"
+                      ></i>
+                      <p class="training-menu__datetime">31/08/201</p>
+                    </div>
+                    <div class="training-menu__date">
+                      <i class="fa-regular fa-clock" style="color: #ffffff"></i>
+                      <p class="training-menu__datetime">19h00 T2,T4,T6</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-menu__avatar">
+                  <img src="./frontend/img/training-menu-avatar-1.png" alt="" />
+                </div>
+                <div class="training-menu__content">
+                  <h2 class="training-menu__heading">
+                    Kế toán thực hành trên Excel
+                  </h2>
+                  <h3 class="training-menu__sub-heading">
+                    Học phí: 2.600.000đ
+                  </h3>
+                  <p class="training-course__text">
+                    Khóa học kế toán thực hành Excel là khóa học dạy thực hành
+                    lên sổ sách, lập BCTC trên máy bằng 01 file “ Mẫu hệ thống
+                    sổ sách...
+                  </p>
+                </div>
+                <div class="training-menu__info">
+                  <div class="training-menu__class">
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-wifi" style="color: #89c101"></i>
+                      <p class="training-menu__sub">Online</p>
+                    </div>
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-users" style="color: #244691"></i>
+                      <p class="training-menu__sub">34 chỗ</p>
+                    </div>
+                  </div>
+                  <div class="training-menu__contact">
+                    <a href="" class="training-menu__link">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="training-menu__box">
+                <div class="training-menu-img-2">
+                  <div class="training-menu__dt">
+                    <div class="training-menu__date">
+                      <i
+                        class="fa-regular fa-calendar"
+                        style="color: #ffffff"
+                      ></i>
+                      <p class="training-menu__datetime">31/08/201</p>
+                    </div>
+                    <div class="training-menu__date">
+                      <i class="fa-regular fa-clock" style="color: #ffffff"></i>
+                      <p class="training-menu__datetime">19h00 T2,T4,T6</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-menu__avatar">
+                  <img src="./frontend/img/training-menu-avatar-2.png" alt="" />
+                </div>
+                <div class="training-menu__content">
+                  <h2 class="training-menu__heading">
+                    Kế toán thực hành trên Excel
+                  </h2>
+                  <h3 class="training-menu__sub-heading">
+                    Học phí: 2.600.000đ
+                  </h3>
+                  <p class="training-course__text">
+                    Khóa học kế toán thực hành Excel là khóa học dạy thực hành
+                    lên sổ sách, lập BCTC trên máy bằng 01 file “ Mẫu hệ thống
+                    sổ sách...
+                  </p>
+                </div>
+                <div class="training-menu__info">
+                  <div class="training-menu__class">
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-wifi" style="color: #f21520"></i>
+                      <p class="training-menu__sub">Offline</p>
+                    </div>
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-users" style="color: #244691"></i>
+                      <p class="training-menu__sub">34 chỗ</p>
+                    </div>
+                  </div>
+                  <div class="training-menu__contact">
+                    <a href="" class="training-menu__link">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="training-menu__bottom">
+              <div class="training-menu__mini-box">
+                <div class="training-menu-img-3">
+                  <div class="training-menu__dt">
+                    <div class="training-menu__date">
+                      <i
+                        class="fa-regular fa-calendar"
+                        style="color: #ffffff"
+                      ></i>
+                      <p class="training-menu__datetime">31/08/201</p>
+                    </div>
+                    <div class="training-menu__date">
+                      <i class="fa-regular fa-clock" style="color: #ffffff"></i>
+                      <p class="training-menu__datetime">19h00 T2,T4,T6</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-menu__content">
+                  <h2 class="training-menu__heading">
+                    Kế toán thực hành trên Excel
+                  </h2>
+                  <h3 class="training-menu__sub-heading">
+                    Học phí: 2.600.000đ
+                  </h3>
+                  <p class="training-course__text">
+                    Khóa học kế toán thực hành Excel là khóa học dạy thực hành
+                    lên sổ sách, lập BCTC trên máy bằng 01 file “ Mẫu hệ thống
+                    sổ sách...
+                  </p>
+                </div>
+                <div class="training-menu__info">
+                  <div class="training-menu__class-1">
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-wifi" style="color: #f21520"></i>
+                      <p class="training-menu__sub">Offline</p>
+                    </div>
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-users" style="color: #244691"></i>
+                      <p class="training-menu__sub">34 chỗ</p>
+                    </div>
+                  </div>
+                  <div class="training-menu__contact">
+                    <a href="" class="training-menu__link">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+              <div class="training-menu__mini-box">
+                <div class="training-menu-img-4">
+                  <div class="training-menu__dt">
+                    <div class="training-menu__date">
+                      <i
+                        class="fa-regular fa-calendar"
+                        style="color: #ffffff"
+                      ></i>
+                      <p class="training-menu__datetime">31/08/201</p>
+                    </div>
+                    <div class="training-menu__date">
+                      <i class="fa-regular fa-clock" style="color: #ffffff"></i>
+                      <p class="training-menu__datetime">19h00 T2,T4,T6</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-menu__content">
+                  <h2 class="training-menu__heading">
+                    Kế toán thực hành trên Excel
+                  </h2>
+                  <h3 class="training-menu__sub-heading">
+                    Học phí: 2.600.000đ
+                  </h3>
+                  <p class="training-course__text">
+                    Khóa học kế toán thực hành Excel là khóa học dạy thực hành
+                    lên sổ sách, lập BCTC trên máy bằng 01 file “ Mẫu hệ thống
+                    sổ sách...
+                  </p>
+                </div>
+                <div class="training-menu__info">
+                  <div class="training-menu__class-1">
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-wifi" style="color: #f21520"></i>
+                      <p class="training-menu__sub">Offline</p>
+                    </div>
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-users" style="color: #244691"></i>
+                      <p class="training-menu__sub">34 chỗ</p>
+                    </div>
+                  </div>
+                  <div class="training-menu__contact">
+                    <a href="" class="training-menu__link">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+              <div class="training-menu__mini-box">
+                <div class="training-menu-img-5">
+                  <div class="training-menu__dt">
+                    <div class="training-menu__date">
+                      <i
+                        class="fa-regular fa-calendar"
+                        style="color: #ffffff"
+                      ></i>
+                      <p class="training-menu__datetime">31/08/201</p>
+                    </div>
+                    <div class="training-menu__date">
+                      <i class="fa-regular fa-clock" style="color: #ffffff"></i>
+                      <p class="training-menu__datetime">19h00 T2,T4,T6</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="training-menu__content">
+                  <h2 class="training-menu__heading">
+                    Kế toán thực hành trên Excel
+                  </h2>
+                  <h3 class="training-menu__sub-heading">
+                    Học phí: 2.600.000đ
+                  </h3>
+                  <p class="training-course__text">
+                    Khóa học kế toán thực hành Excel là khóa học dạy thực hành
+                    lên sổ sách, lập BCTC trên máy bằng 01 file “ Mẫu hệ thống
+                    sổ sách...
+                  </p>
+                </div>
+                <div class="training-menu__info">
+                  <div class="training-menu__class-1">
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-wifi" style="color: #f21520"></i>
+                      <p class="training-menu__sub">Offline</p>
+                    </div>
+                    <div class="training-menu__online">
+                      <i class="fa-solid fa-users" style="color: #244691"></i>
+                      <p class="training-menu__sub">34 chỗ</p>
+                    </div>
+                  </div>
+                  <div class="training-menu__contact">
+                    <a href="" class="training-menu__link">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Training-menu-->
+
+        <!--START Contact-->
+        <div class="contact">
+          <div class="contact__container container">
+            <div class="contact__wrap">
+              <div class="contact__box">
+                <div class="contact__title">
+                  <div class="contact__heading">Đăng ký tư vấn</div>
+                  <p class="contact__sub-heading">
+                    Đăng ký để có thể nhận thông tin tư vấn nhanh chóng và ưu
+                    đãi hấp dẫn của chúng tôi.
+                  </p>
+                </div>
+                <form action="" class="contact__from">
+                  <div class="contact__row">
+                    <div class="contact__col--top">
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Họ và tên"
+                        id=""
+                        class="form--half"
+                      />
+
+                      <input
+                        type="email"
+                        name=""
+                        placeholder="E-mail"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact__col--bottom">
+                      <input
+                        type="tel"
+                        name=""
+                        placeholder="Số điện thoại"
+                        id=""
+                        class="form--half"
+                      />
+                      <input
+                        type="text"
+                        name=""
+                        placeholder="Chủ đề"
+                        id=""
+                        class="form--half"
+                      />
+                    </div>
+
+                    <div class="contact--col-height">
+                      <textarea
+                        name=""
+                        rows="1"
+                        id=""
+                        placeholder="Nội dung"
+                        class="form--control"
+                      ></textarea>
+                    </div>
+                    <input
+                      type="submit"
+                      value="Gửi yêu cầu"
+                      class="contact__submit"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--END Contact-->
+      </div>
+      <!--END Content-->
+
+      <!--START Footer-->
+      <div class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="footer__background">
+              <div class="footer__company-info">
+                <div class="company-info__logo">
+                  <img src="./frontend/img/SAB LOGO-01.png" alt="" />
+                </div>
+                <p class="company-info__text">
+                  Molestie nec, molestie libero in auctor <br />
+                  vels. Quis dictumst nulla risus curabitur <br />
+                  non dolor, pulvinar. Orci, pretium pretium <br />
+                  velit scelerisqueultrices.
+                </p>
+                <div class="company-info__sticker">
+                  <img src="./frontend/img/image 33.png" alt="" />
+                </div>
+              </div>
+              <div class="footer__company-contact">
+                <div class="company-contact__name">
+                  Công ty TNHH Tư vấn Quản lý Tài chính SAB
+                </div>
+                <div class="company-contact__box">
+                  <p class="company-contact__address">
+                    Địa chỉ: DV05-LK289, Khu đất dịch vụ Đào Đất Hàng Bè, -
+                    Phường Kiến Hưng - Quận Hà Đông - Hà Nội
+                  </p>
+                  <a href="tel:0868679028" class="company-contact__tel"
+                    >Số điện thoại: 0963561906</a
+                  >
+                  <a
+                    href="mailto:thanhtien4112006@gmail.com"
+                    class="company-contact__email"
+                    >Email: contact@sabfa.com.vn</a
+                  >
+                </div>
+              </div>
+              <div class="footer__company-support">
+                <div class="company-support__title">
+                  <div class="company-support__heading">Hỗ trợ khách hàng</div>
+                  <ul class="company-support__sub-heading">
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Tư vấn trực tuyến</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Hỏi đáp</a>
+                    </li>
+                    <li>
+                      <img
+                        class="company-support__icon"
+                        src="./frontend/img/Polygon 4.png"
+                        alt=""
+                      />
+                      <a href="">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="company-support__following">
+                  <div class="company-support__following-title">
+                    Theo dõi chúng tôi qua
+                  </div>
+                  <ul class="company-support__following-app">
+                    <li>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__company-link">
+                <div class="company-link__title">Link nhanh</div>
+                <ul class="company-link__item">
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Giới thiệu</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Dịch vụ</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Đào tạo</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Sản phẩm</a>
+                  </li>
+                  <li>
+                    <img
+                      class="company-support__icon"
+                      src="./frontend/img/Polygon 4.png"
+                      alt=""
+                    /><a href="">Tin tức</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="container">
+            <div class="footer-end__wrap">
+              <div class="footer-end__copy">
+                &copy;2021 SAB. All Right Reserved
+              </div>
+              <div class="footer-end__title">Chính sách bảo mật thông tin</div>
+            </div>
+          </div>
+        </div>
+
+        <!--START Chat-->
+        <div class="chat">
+          <div class="chat__box-1">
+            <a href="tel:0868679028"
+              ><i class="fa-solid fa-phone-volume chat__icon phone"></i
+            ></a>
+          </div>
+          <div class="chat__box-2">
+            <a href=""
+              ><i class="fa-brands fa-facebook-messenger chat__icon mess"></i
+            ></a>
+          </div>
+
+          <a href=""
+            ><img
+              class="chat__icon-zalo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg"
+            />
+          </a>
+
+          <div class="chat__box-3" id="backToTop">
+            <i class="fa-solid fa-arrow-up chat__icon"></i>
+          </div>
+        </div>
+        <!--END Chat-->
+      </div>
+      <!--END Footer-->
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./frontend/js/script.js"></script>
+</html>

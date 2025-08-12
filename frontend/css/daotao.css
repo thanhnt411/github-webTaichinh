@@ -1,0 +1,274 @@
+/*START Banner*/
+.banner__background {
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    background-image: url("../img/daotao-banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+}
+/*END Banner*/
+
+/*START Page to*/
+.page-to {
+    background-color: #ffffff;
+    margin-bottom: 64px;
+}
+/*END Page to*/
+
+/*START Training course*/
+.training-course {
+    margin-bottom: 80px;
+}
+
+.training-course__top {
+    width: 100%;
+    display: flex;
+    gap: 77px;
+    margin-bottom: 80px;
+}
+
+.training-course--left, .training-course--right {
+    width: 50%;
+}
+
+.training-course__title {
+    padding: 0 20px;
+}
+
+.training-course__text {
+    color: #2f2f2f;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.training-course__list {
+    width: 100%;
+    display: flex;
+    gap: 70px;
+    margin-bottom: 24px;
+}
+
+.training-course__list-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.training-course__list-box li {
+    list-style: none;
+}
+
+.training-course__list-box li a {
+    text-decoration: none;
+    color: #244691;
+}
+
+.training-course__item {
+    display: flex;
+    gap: 16px;
+}
+
+.training-course--right {
+    display: flex;
+    gap: 24px;
+}
+.training-course__img--left, .training-course__img--right {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.training-course__img--right {
+    margin-top: -24px;
+}
+
+.training-course__bottom {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.training-course__bottom-box {
+    width: 25%;
+}
+
+.training-course__content-1 {
+    background-color:  #E6EBF9;
+    padding: 27px 16px;
+}
+
+.training-course__content-2 {
+    background-color:  #FFE6E6;
+    padding: 27px 16px;
+}
+
+.training-course__icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.training-course__text-box {
+    font-size: 16px;
+    color: #474747;
+    text-align: justify;
+}
+/*END Training course*/
+
+/*START Training menu*/
+.training-menu {
+    margin-bottom: 80px;
+}
+
+.training-menu__top {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.training-menu__box {
+    width: 50%;
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 5px 14px 0px #00000014;
+    position: relative;
+    z-index: 1;
+}
+
+.training-menu-img-1, .training-menu-img-2 {
+    height: 337px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.training-menu-img-1 {
+    background-image: url("../img/training-menu-left.png");
+}
+
+.training-menu-img-2 {
+    background-image: url("../img/training-menu-right.png");
+}
+
+.training-menu__dt {
+    display: flex;
+    gap: 34px;
+    position: absolute;
+    z-index: 1;
+    left: 24px;
+    bottom: 20px;
+}
+
+.training-menu__date {
+    display: flex;
+    gap: 8px;
+}
+
+.training-menu__datetime {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.training-menu__avatar {
+    position: absolute;
+    z-index: 3;
+    top: 268px;
+    right: 32px;
+}
+
+.training-menu__content {
+    padding: 24px 16px;
+}
+
+.training-menu__heading {
+    color: #2f2f2f;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.training-menu__sub-heading {
+    font-size: 18px;
+    color: #244691;
+    margin-bottom: 8px;
+}
+
+.training-menu__info {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 21px;
+}
+
+.training-menu__class {
+    display: flex;
+    gap: 41px;
+}
+
+.training-menu__online {
+    display: flex;
+    gap: 8px;
+}
+
+.training-menu__contact {
+    width: 115px;
+    height: 40px;
+    background-color: #f21520;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training-menu__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.training-menu__bottom {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.training-menu__mini-box {
+    width: 33.33%;
+}
+
+.training-menu-img-3, .training-menu-img-4, .training-menu-img-5 {
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;    
+}
+
+.training-menu-img-3 {
+    background-image: url("../img/training-menu-first.png");
+}
+
+.training-menu-img-4 {
+    background-image: url("../img/training-menu-second.png");
+}
+
+.training-menu-img-5 {
+    background-image: url("../img/training-menu-third.png");
+}
+
+.training-menu__class-1 {
+    display: flex;
+    gap: 20px;
+}
+/*END Training menu*/
+
