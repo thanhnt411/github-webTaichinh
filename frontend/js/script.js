@@ -21,10 +21,9 @@ menuMobile.addEventListener("click",function() {
 var swiperBanner = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
-    loop: true,
-    
+
     autoplay: {
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
     },
     
@@ -67,12 +66,12 @@ var swiperTraining = new Swiper(".mySwiper-training", {
 var swiperFeedback = new Swiper(".mySwiper-feedback", {
     spaceBetween: 30,
     centeredSlides: true,
-    loop: true,
     slidesPerView: 3,          
     slidesPerGroup: 1, 
+    loop: true,
     
     autoplay: {
-        delay: 1000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     
@@ -92,7 +91,7 @@ var swiperFeedback = new Swiper(".mySwiper-feedback", {
         },
 
         768: { //từ 768 trở lên
-            slidesPerView: 4
+            slidesPerView: 3
         },
     }
 
@@ -106,7 +105,7 @@ var swiperFeedback = new Swiper(".mySwiper-feedback", {
     },
 
     autoplay: {
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
     },
 

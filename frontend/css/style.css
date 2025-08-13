@@ -186,28 +186,28 @@
 
 .banner__background--first {
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-image: url("../img/business-background-first.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding-top: 100px;
 }
 
 .banner__background--second {
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-image: url("../img/business-background-second.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     padding-top: 100px;
 }
 
 .banner__background--third {
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-image: url("../img/business-background-third.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,7 +227,6 @@
     max-width: 640px;
     text-align: center;
 }
-
 
 .banner__heading, .banner__heading--bottom {
     color: #ffffff;
@@ -283,14 +282,28 @@
     margin-bottom: 50px;
 }
 
+.mySwiper .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
 .mySwiper .swiper-pagination-bullet {
-  background-color: #ffffff !important;
-  opacity: 1;
+    width: 6px; 
+    height: 6px;
+    background-color: #ffffff !important;
+    opacity: 0.5;
+    border-radius: 50%;
+    transform-origin: left center;
+    transition: transform 0.4s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .mySwiper .swiper-pagination-bullet-active {
-  background-color: #F21520 !important;
-  opacity: 1;
+    width: 32px; 
+    height: 6px;
+    border-radius: 3px;
+    background-color: #F21520 !important;
+    opacity: 1;
 }
 /*END Banner*/
 
@@ -323,9 +336,6 @@
     margin-bottom: 32px;
 }
 
-.content__box {
-}
-
 .content__title {
     font-size: 24px;
     margin-bottom: 16px;
@@ -354,17 +364,18 @@
 /*START Content About*/
 .about {
     width: 100%;
+    margin-bottom: 80px;
 }
 
 .about__wrap {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 66px;
 }
 
 .about__introduce {
     width: 50%;
-    padding: 0 80px;
 }
 
 .about__title, .partners__title, .feature__title {
@@ -437,10 +448,11 @@
 }
 
 .about__video-background {
-     background-color: #f21520;
+    background-color: #f21520;
     width: 33.33%;
     height: 318px;
-    margin-bottom: -30px;
+    margin-top: 31px;
+    margin-right: -20px;
     position: absolute;
     right: 0;
     z-index: 0; 
@@ -450,11 +462,18 @@
     display: flex;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+.about__video-box::after {
+    position: absolute;
+    z-index: 5;
+    height: 40%;
+    background: linear-gradient(totop, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .about__video-content {
-    margin-top: -40px;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     max-width: 505px;
 }
 
@@ -494,10 +513,17 @@
 
 .about__video-title {
     color: #f21520;
-    letter-spacing: 4px;
+    letter-spacing: 10px;
+    font-size: 18px;
+    font-weight: 900;
 }
 
-.about__box {
+.about__container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.about__box-wrap {
     width: 100%;
     display: flex;
     gap: 24px;
@@ -506,39 +532,54 @@
 .about__box-item--first, .about__box-item--second, .about__box-item--third {
     width: 33.33%;
     height: 249px;
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
 }
 
-.about__box-item--first {
-    background-image: url("../img/About-box-item1.png");
+.about__img {
+    width: 100%;
+    height: 100%;
 }
 
-.about__box-item--second {
-    background-image: url("../img/About-box-item2.png");
-}
-
-.about__box-item--third {
-    background-image: url("../img/About-box-item3.png");
-}
-
-.about__box-text {
+.about__box-item--first::after,
+.about__box-item--second::after,
+.about__box-item--third::after {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
     text-align: center;
-    padding: 95px 85px;
 }
 
-.box-text {
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
+.about__box-item--first::after {
+    content: "Đưa ra những giải pháp hiệu quả và thiết thực";
+    padding: 0 80px;
 }
 
+.about__box-item--second::after {
+    content: "Tư vấn tài chính dựa trên mục tiêu của doanh nghiệp";
+    padding: 0 60px;
+}
+
+.about__box-item--third::after {
+    content: "Đa dạng loại hình dịch vụ và sản phẩm";
+    padding: 0 80px;
+
+}
 /*END Content About*/
 
 /*START Service*/
-.service__content {
+.service {
+    margin-bottom: 80px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
+}
+
+.service__content {
+   
 }
 
 .service__wrap--top {
@@ -562,6 +603,8 @@
     color: #2f2f2f;
     box-shadow: 0px 5px 15px 0px #2446911A;
     padding: 30px 50px;
+    position: relative;
+    z-index: 3;
 }
 
 .service__logo {
@@ -569,6 +612,7 @@
     text-align: center;
     font-weight: 300;
     margin-bottom: 32px;
+    position: relative;
 }
 
 .service__title {
@@ -603,17 +647,22 @@
     background-image: url("../img/Background-service.png");
     color: #ffffff;
 }
-/*END Service*/
 
-/*START Background-content*/
-.background__content {
-    max-width: 100%;
-    height: 100vh;
+.service__container {
+    max-width: 1366px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 2;
+}
+
+.service__background {
+    width: 100%;
+    height: 648px;
     background-image: url("../img/background__content.png");
     background-repeat: no-repeat;
-    margin-top: -235px;
+    bottom: -400px;
 }
-/*END Background-content*/
+/*END Service*/
 
 /*START Swiper training,feedback, partners*/
 .swiper-button-prev, .swiper-button-next {
@@ -630,22 +679,38 @@
 } 
 
 .mySwiper-feedback .swiper-pagination-bullet {
-    background-color: #EBEBEB !important;
-    opacity: 1;
+    width: 6px; 
+    height: 6px;
+    background-color: #ebebeb !important;
+    opacity: 0.5;
+    border-radius: 50%;
+    transform-origin: left center;
+    transition: transform 0.4s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .mySwiper-feedback .swiper-pagination-bullet-active {
+    width: 32px; 
+    height: 6px;
+    border-radius: 3px;
     background-color: #F21520 !important;
     opacity: 1;
 }
 
 
 .mySwiper-partners .swiper-pagination-bullet {
-    background-color: #EBEBEB !important;
-    opacity: 1;
+    width: 6px; 
+    height: 6px;
+    background-color: #ebebeb !important;
+    opacity: 0.5;
+    border-radius: 50%;
+    transform-origin: left center;
+    transition: transform 0.4s ease, background-color 0.3s ease, opacity 0.3s ease;
 }
 
 .mySwiper-partners .swiper-pagination-bullet-active {
+    width: 32px; 
+    height: 6px;
+    border-radius: 3px;
     background-color: #F21520 !important;
     opacity: 1;
 }
@@ -672,7 +737,8 @@
 
 /*START Training*/
 .training {
-    margin-top: -250px;
+    position: relative;
+    z-index: 2;
     margin-bottom: 80px;
 }
 
@@ -779,6 +845,7 @@
 .feedback__wrapper {
     width: 100%;
     display: flex;
+    margin-bottom: 50px;
 }
 
 .feedback__slide {
@@ -855,6 +922,7 @@
 
 .partners__box--right {
     width: 70%;
+    padding-bottom: 150px;
 }
 .partners__wrapper {
     width: 100%;
@@ -873,6 +941,7 @@
     height: 72px;
     max-width: 100%;
 }
+
 /*END Partners*/
 
 /*START Feature*/
@@ -916,6 +985,7 @@
     color: #f21520;
 }
 .feature__wrap--bottom {
+    width: 100%;
     display: flex;
     gap: 24px;
 }
@@ -926,10 +996,15 @@
 
 .feature__box--left-wrap, .feature__mini-box-wrap {
     position: relative;
+    width: 100%;
+}
+
+.feature__box--left-wrap {
+    width: 100%;
 }
 
 .feature__img {
-    max-width: 540px;
+    width: 100%;
     position: relative;
     z-index: 1;
 }
@@ -955,6 +1030,7 @@
 }
 
 .feature-right--top, .feature-right--bottom {
+    width: 100%;
     display: flex;
     gap: 24px;
 }
@@ -964,7 +1040,11 @@
 }
 
 .feature__mini-box {
-    width: 50%;
+    max-width: 50%;
+}
+
+.feature__img-mini {
+    width: 100%;
 }
 
 .feature__mini-box-title {
@@ -1511,6 +1591,11 @@ textarea::placeholder {
         margin: 0 auto;
     }
 
+    .about__box-wrap {
+        display: block;
+        gap: 24px;
+    }
+
     .about__box {
         width: 100%;
         display: block;
@@ -1651,15 +1736,17 @@ textarea::placeholder {
 
     .feature-right--top, .feature-right--bottom {
         width: 100%;
-        display: flex;
+        display: block;
     }
 
     .feature-right--top {
+        width: 100%;
         margin: 24px 0;
     }
 
     .feature__mini-box {
-        width: 50%;
+        width: 100%;
+        margin: auto;
     }
     /*END Feature*/
 

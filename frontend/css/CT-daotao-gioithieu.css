@@ -11,6 +11,9 @@
     width: 70%;
 }
 
+.course__title-box {
+    padding-right: 90px;
+}
 .course__title {
     color: #2f2f2f;
     font-size: 32px;
@@ -64,6 +67,7 @@
 .course__introduce-heading {
     color: #2f2f2f;
     font-size: 24px;
+    font-weight: 500;
     margin-bottom: 24px;
 }
 
@@ -76,4 +80,159 @@
 .course--list-box {
     display: flex;
     gap: 16px;
+}
+
+.course__menu {
+    width: 100%;
+    padding: 25px 16px;
+    box-shadow: 0px 3px 12px 0px #00000014;
+}
+
+.course__heading {
+    color: #2f2f2f;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.course__menu-title {
+    max-height: 40px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 9px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course__heading-box {
+    color: #2f2f2f;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.course__menu-icon {
+    width: 22px;
+    height: 22px;
+    background-color: #f21520;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course__menu-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.course__menu-item {
+    padding: 16px 16px;
+}
+
+.course__heading-text {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.course__underscore {
+    width: 100%;
+    height: 1px;
+    background-color: #f9f9f9;
+}
+
+.course__form {
+    width: 30%;
+    position: relative;
+    z-index: 1;
+}
+
+.course__form-box {
+    width: 100%;
+    background-image: url("../img/form-contact-background.png");
+    padding: 29px 24px 54px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.price {
+    margin-bottom: 14px;
+}
+
+.price__text {
+    color: #ffffff;
+    font-size: 24px;
+    margin-right: 11px;
+    font-weight: 400;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.form__text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.date__list {
+    display: flex;
+    gap: 8px;
+}
+
+.date__box {
+    width: 30px;
+    height: 30px;
+    background-color: #ffbd1e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date__box-text {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.course__contact-form {
+    width: 100%;
+    height: 40px;
+    background-color: #f21520;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.course__contact-form a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.form__box {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form__icon {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+}
+
+.course__deal {
+    max-width: 78px;
+    height: 73px;
 }
