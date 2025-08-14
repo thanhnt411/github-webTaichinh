@@ -15,10 +15,32 @@ menuMobile.addEventListener("click",function() {
         iconClose.classList.remove("show");
     }
 });
+
+const searchIcon = document.querySelector(".header__search-box");
+const searchOverlay = document.querySelector(".header__input-box");
+const searchInput = document.querySelector(".header__input");
+
+searchIcon.addEventListener("click", (e) => {
+    e.stopPropagation();
+    searchOverlay.classList.add("appear");
+    document.body.classList.add("no-scroll");
+});
+
+searchOverlay.addEventListener("click", (e) => {
+    if (!searchInput.contains(e.target)) {
+        searchOverlay.classList.remove("appear");
+        document.body.classList.remove("no-scroll");
+    }
+});
+
+searchInput.addEventListener("click", (e) => {
+    e.stopPropagation();
+});
+
 //END Menu mobile
 
 //START Banner
-var swiperBanner = new Swiper(".mySwiper", {
+var swiperBanner = new Swiper(".JS-banner", {
     spaceBetween: 30,
     centeredSlides: true,
 
@@ -34,8 +56,26 @@ var swiperBanner = new Swiper(".mySwiper", {
 });
 //END Banner
 
+//START About
+const myVideo = document.querySelector(".about__video-box");
+const playVideo = document.querySelector(".video__myVideo");
+const playContainer = document.querySelector(".about__play");
+const buttonVideo = document.getElementById("video-mp4");
+buttonVideo.addEventListener("click",function() {
+    playContainer.classList.toggle("play");
+    playVideo.classList.toggle("play");
+    myVideo.classList.toggle("play");
+    playVideo.play()
+})
+playVideo.addEventListener("ended",function() {
+    playContainer.classList.toggle("play");
+    playVideo.classList.toggle("play");
+    myVideo.classList.toggle("play");
+})
+//END About
+
 //START training,feedback,partners
-var swiperTraining = new Swiper(".mySwiper-training", {
+var swiperTraining = new Swiper(".JS-training", {
     spaceBetween: 30,
     centeredSlides: true,
     loop: true,
@@ -63,7 +103,7 @@ var swiperTraining = new Swiper(".mySwiper-training", {
     }
 });
 
-var swiperFeedback = new Swiper(".mySwiper-feedback", {
+var swiperFeedback = new Swiper(".JS-feedback", {
     spaceBetween: 30,
     centeredSlides: true,
     slidesPerView: 3,          
@@ -97,7 +137,7 @@ var swiperFeedback = new Swiper(".mySwiper-feedback", {
 
 });
 
- var swiperPartners = new Swiper(".mySwiper-partners", {
+ var swiperPartners = new Swiper(".JS-partners", {
     spaceBetween: 0,
     slidesPerView: 3,
     grid: {
@@ -141,8 +181,8 @@ function smoothScrollToTop(duration) {
 
   function scrollStep(currentTime) {
     const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1); // từ 0 → 1
-    const ease = 1 - Math.pow(1 - progress, 3); // easing cubic-out
+    const progress = Math.min(elapsed / duration, 1); 
+    const ease = 1 - Math.pow(1 - progress, 3); 
     window.scrollTo(0, start * (1 - ease));
 
     if (progress < 1) {

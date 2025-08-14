@@ -31,15 +31,27 @@
               <form action="">
                 <div class="header__search">
                   <div class="header__search-border">
-                    <input
-                      type="text"
-                      placeholder="Nhập từ khóa tìm kiếm"
-                      class="header__input"
-                    />
+                    <div class="header__input-box">
+                      <div class="header__menu-input">
+                        <input
+                          id=""
+                          type="text"
+                          placeholder="Nhập từ khóa tìm kiếm"
+                          class="header__input"
+                        />
+                        <div class="header__menu-search-icon">
+                          <i class="fa-solid fa-search"></i>
+                        </div>
+                      </div>
+                    </div>
                     <div class="header__search-box">
                       <div class="header__search-icon">
                         <i class="fa-solid fa-search"></i>
                       </div>
+                    </div>
+                    <div class="header__ham" id="toggle">
+                      <i class="fas fa-bars icon-open" id="isOpen"></i>
+                      <i class="fa-solid fa-xmark icon-close" id="isClose"></i>
                     </div>
                   </div>
                 </div>
@@ -73,11 +85,6 @@
                   </div>
                 </div>
               </div>
-
-              <div class="header__ham" id="toggle">
-                <i class="fas fa-bars" id="isOpen"></i>
-                <i class="fa-solid fa-xmark" id="isClose"></i>
-              </div>
             </div>
           </div>
         </div>
@@ -90,7 +97,16 @@
               </div>
               <li><a href="./index.html">TRANG CHỦ</a></li>
               <li><a href="./gioithieu.html">GIỚI THIỆu</a></li>
-              <li><a href="./dichvu.html">DỊCH VỤ</a></li>
+              <li>
+                <a href="./dichvu.html">DỊCH VỤ</a>
+                <ul class="dichvu">
+                  <li><a href="">Dịch vụ soát xét tuân thủ thuế</a></li>
+                  <li><a href="">Dịch vụ kế toán thuế trọn gói</a></li>
+                  <li><a href="">Dịch vụ hỗ trợ thanh kiểm tra thuế</a></li>
+                  <li><a href="">Dịch vụ hoàn thuế</a></li>
+                  <li><a href="">Dịch vụ QTT TNCN</a></li>
+                </ul>
+              </li>
               <li><a href="./daotao.html">ĐÀO TẠO</a></li>
               <li><a href="">SẢN PHẨM</a></li>
               <li><a href="">TIN TỨC</a></li>
@@ -119,7 +135,7 @@
       <!--END Header-->
 
       <!--START Banner-->
-      <div class="banner swiper mySwiper">
+      <div class="banner swiper JS-banner">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="banner__background--first">
@@ -225,11 +241,12 @@
               <div class="about__video">
                 <div class="about__video-wrap">
                   <div class="about__video-box">
-                    <img
-                      class="about__video-content"
-                      src="./frontend/img/about-video-img.png"
-                      alt=""
-                    />
+                    <video
+                      src="6858386181962.mp4"
+                      class="video__myVideo"
+                      controls
+                      muted
+                    ></video>
                     <div class="about__play">
                       <div class="about__play-box">
                         <i
@@ -385,7 +402,7 @@
               <div class="content__sub-heading">Các khóa đào tạo của SAB</div>
               <div class="content__underline"></div>
 
-              <div class="training__content swiper mySwiper-training">
+              <div class="training__content swiper JS-training">
                 <div class="training__wrapper swiper-wrapper">
                   <div class="training__slide swiper-slide">
                     <div class="training__slide-box">
@@ -524,7 +541,7 @@
             <div class="content__heading">FEEDBACK</div>
             <div class="content__sub-heading">Khách hàng nói gì về SAB</div>
             <div class="content__underline"></div>
-            <div class="feedback__box swiper mySwiper-feedback">
+            <div class="feedback__box swiper JS-feedback">
               <div class="feedback__wrapper swiper-wrapper">
                 <div class="feedback__slide swiper-slide">
                   <div class="feedback__slide-box">
@@ -670,7 +687,7 @@
                   </div>
                 </div>
               </div>
-              <div class="partners__box--right swiper mySwiper-partners">
+              <div class="partners__box--right swiper JS-partners">
                 <div class="partners__wrapper swiper-wrapper">
                   <div class="partners__slide swiper-slide">
                     <img src="./frontend/img/partners-logo-1.png" alt="" />
