@@ -80,7 +80,7 @@ var swiperTraining = new Swiper(".JS-training", {
     centeredSlides: true,
     loop: true,
     slidesPerView: 4,          
-    slidesPerGroup: 1, 
+    slidesPerGroup: 1,
     
     autoplay: {
         delay: 1000,
@@ -143,7 +143,7 @@ var swiperFeedback = new Swiper(".JS-feedback", {
     grid: {
         rows: 3,
     },
-
+    
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,

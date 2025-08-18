@@ -17,6 +17,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="main">
@@ -213,7 +217,7 @@
       <div class="content">
         <!--START About-->
         <div class="about">
-          <div class="container">
+          <div class="container about__container">
             <div class="about__wrap">
               <div class="about__introduce">
                 <div class="about__title">
@@ -268,7 +272,7 @@
             </div>
           </div>
           <div class="about__box">
-            <div class="about__container">
+            <div class="about__box-container">
               <div class="about__box-wrap">
                 <div class="about__box-item--first">
                   <img
@@ -299,7 +303,7 @@
 
         <!--START Service-->
         <div class="service">
-          <div class="container">
+          <div class="container service__container">
             <div class="content__heading">OUR SERVICE</div>
             <div class="content__sub-heading">Dịch vụ của chúng tôi</div>
             <div class="content__underline"></div>
@@ -388,9 +392,6 @@
               </div>
             </div>
           </div>
-          <div class="service__container">
-            <div class="service__background"></div>
-          </div>
         </div>
         <!--END Service-->
 
@@ -402,7 +403,16 @@
               <div class="content__sub-heading">Các khóa đào tạo của SAB</div>
               <div class="content__underline"></div>
 
-              <div class="training__content swiper JS-training">
+              <div class="swiper__button">
+                <div class="swiper__button-prev swiper-button-prev3">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="swiper__button-next swiper-button-next3">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+
+              <div thumbsSlider="" class="training__content swiper JS-training">
                 <div class="training__wrapper swiper-wrapper">
                   <div class="training__slide swiper-slide">
                     <div class="training__slide-box">
@@ -433,41 +443,43 @@
                     Kiểm toán NB/KSNB
                   </div>
                 </div>
-                <div class="swiper-button-next swiper-button-next3"></div>
-                <div class="swiper-button-prev swiper-button-prev3"></div>
               </div>
 
-              <div class="training__box">
-                <div class="training__background">
-                  <img
-                    class="training__img"
-                    src="./frontend/img/training-background.png"
-                    alt=""
-                  />
-                </div>
-                <div class="training__info">
-                  <h3 class="content__title">Kế toán chuyên sâu</h3>
-                  <p class="content__sub-title">
-                    Kế toán SAB đào tạo bài bản và chuyên nghiệp, đảm bảo sự
-                    thành thạo trong nghiệp vụ kế toán cho các nhân viên cung
-                    cấp cho đơn vị Khách hàng;
-                  </p>
-                  <h4 class="training__heading">
-                    Học phí:
-                    <span class="training__sub-heading">2.699.000đ</span>
-                  </h4>
-                  <h4 class="training__heading">
-                    Hình thức học:
-                    <span class="training__sub-heading">Online và Offline</span>
-                  </h4>
-                  <h4 class="training__heading">
-                    Thời gian:
-                    <span class="training__sub-heading"
-                      >19h00 tối 2, 4, 6 hằng tuần</span
-                    >
-                  </h4>
-                  <div class="content__contact">
-                    <a href="" class="content__contact-link">Xem chi tiết</a>
+              <div class="swiper-wrapper">
+                <div class="training__box">
+                  <div class="training__background">
+                    <img
+                      class="training__img"
+                      src="./frontend/img/training-background.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="training__info">
+                    <h3 class="content__title">Kế toán chuyên sâu</h3>
+                    <p class="content__sub-title">
+                      Kế toán SAB đào tạo bài bản và chuyên nghiệp, đảm bảo sự
+                      thành thạo trong nghiệp vụ kế toán cho các nhân viên cung
+                      cấp cho đơn vị Khách hàng;
+                    </p>
+                    <h4 class="training__heading">
+                      Học phí:
+                      <span class="training__sub-heading">2.699.000đ</span>
+                    </h4>
+                    <h4 class="training__heading">
+                      Hình thức học:
+                      <span class="training__sub-heading"
+                        >Online và Offline</span
+                      >
+                    </h4>
+                    <h4 class="training__heading">
+                      Thời gian:
+                      <span class="training__sub-heading"
+                        >19h00 tối 2, 4, 6 hằng tuần</span
+                      >
+                    </h4>
+                    <div class="content__contact">
+                      <a href="" class="content__contact-link">Xem chi tiết</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -541,6 +553,16 @@
             <div class="content__heading">FEEDBACK</div>
             <div class="content__sub-heading">Khách hàng nói gì về SAB</div>
             <div class="content__underline"></div>
+
+            <div class="swiper__button swiper__button-feedback">
+              <div class="swiper__button-prev swiper-button-prev3">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper__button-next swiper-button-next3">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+
             <div class="feedback__box swiper JS-feedback">
               <div class="feedback__wrapper swiper-wrapper">
                 <div class="feedback__slide swiper-slide">
@@ -647,8 +669,6 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next swiper-button-next2"></div>
-              <div class="swiper-button-prev swiper-button-prev2"></div>
               <div class="swiper-pagination swiper-pagination2"></div>
             </div>
           </div>
@@ -674,20 +694,29 @@
 
                 <div class="partners__box-info">
                   <div class="partners__box-info--left">
-                    <img
-                      src="./frontend/img/partners-box-info-left.png"
-                      alt=""
-                    />
+                    <div class="partners__banner">
+                      <h3 class="partners__banner-title">250</h3>
+                      <p class="partners__banner-sub">Dự án thành công</p>
+                    </div>
                   </div>
                   <div class="partners__box-info--right">
-                    <img
-                      src="./frontend/img/partners-box-info-right.png"
-                      alt=""
-                    />
+                    <div class="partners__banner">
+                      <h3 class="partners__banner-title">999+</h3>
+                      <p class="partners__banner-sub">Khách hàng, đối tác</p>
+                    </div>
                   </div>
                 </div>
               </div>
+
               <div class="partners__box--right swiper JS-partners">
+                <div class="swiper__button swiper__button-partners">
+                  <div class="swiper__button-prev swiper-button-prev3">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div class="swiper__button-next swiper-button-next3">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                </div>
                 <div class="partners__wrapper swiper-wrapper">
                   <div class="partners__slide swiper-slide">
                     <img src="./frontend/img/partners-logo-1.png" alt="" />
@@ -744,8 +773,6 @@
                     <img src="./frontend/img/partners-logo-3.png" alt="" />
                   </div>
                 </div>
-                <div class="swiper-button-next swiper-button-next4"></div>
-                <div class="swiper-button-prev swiper-button-prev4"></div>
                 <div class="swiper-pagination swiper-pagination4"></div>
               </div>
             </div>
@@ -1143,4 +1170,8 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./frontend/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </html>
