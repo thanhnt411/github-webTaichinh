@@ -1021,6 +1021,10 @@
     padding-bottom: 150px;
 }
 
+.partners__content  {
+    width: 100%;
+}
+
 .partners__wrapper {
     width: 100%;
     display: flex;
