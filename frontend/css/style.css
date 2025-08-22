@@ -233,7 +233,7 @@
     background-image: url("../img/business-background-first.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding: 154px 0 139px;
 }
 
 .banner__background--second {
@@ -242,7 +242,7 @@
     background-image: url("../img/business-background-second.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding: 154px 0 139px;
 }
 
 .banner__background--third {
@@ -608,9 +608,9 @@
     gap: 24px;
 }
 
-.about__box-item--first, .about__box-item--second, .about__box-item--third {
+.about__box-item {
     width: 33.33%;
-    height: 249px;
+    max-height: 359px;
     position: relative;
 }
 
@@ -708,7 +708,7 @@
 .service__box:hover {
     background-image: url("../img/Background-service.png");
     background-size: cover;
-    height: 100%;
+    background-position: center;
     color: #ffffff;
 }
 
@@ -1050,6 +1050,10 @@
 
 .partners__slide:not(:nth-child(3n+1)) {
     border-left: none;
+}
+
+.partners__slide:nth-child(-n+6) {
+    border-bottom: none;
 }
 
 .partners__slide:hover {
@@ -1808,7 +1812,7 @@ textarea::placeholder {
         padding: 0 20px;
     }
 
-    .about__box-item--first, .about__box-item--second, .about__box-item--third {
+    .about__box-item {
         width: 100%;
         margin:0 auto 20px;
     }
@@ -2318,6 +2322,8 @@ textarea::placeholder {
 
     .about__video-title {
         margin: 0 auto;
+        font-size: 16px;
+        letter-spacing: 8px;
     }
     
 

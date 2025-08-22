@@ -43,12 +43,12 @@ searchInput.addEventListener("click", (e) => {
 var swiperBanner = new Swiper(".JS-banner", {
     spaceBetween: 30,
     centeredSlides: true,
-    
+    /*
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
-
+    */
     pagination: {
         el: ".swiper-pagination1",
         clickable: true,
