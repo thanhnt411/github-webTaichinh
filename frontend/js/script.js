@@ -169,12 +169,13 @@ var swiperFeedback = new Swiper(".JS-feedback", {
         fill: "row"
     },
     
+    /*
     autoplay: {
         delay: 7000,
         disableOnInteraction: false,
-          reverseDirection: true,
+        reverseDirection: true,
     },
-    
+    */
     pagination: {
         el: ".swiper-pagination4",
         clickable: true,

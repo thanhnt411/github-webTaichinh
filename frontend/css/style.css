@@ -1046,7 +1046,7 @@ body .partners__wrapper {
     content: "";
     position: absolute;
     width: 100%;
-    height:  0.1px;
+    height: 0.1px;
     background-color: #ddd;
     bottom: 0;
 }
