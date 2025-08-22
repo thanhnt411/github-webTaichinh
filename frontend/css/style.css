@@ -2434,6 +2434,12 @@ textarea::placeholder {
     }
     /*END Feature*/
 
+    /*START Contact*/
+    .contact {
+        margin-bottom: -60px;
+    }
+    /*END Contact*/
+
     /*START Footer*/
     .footer-body {
         padding: 0 20px;
@@ -2737,5 +2743,10 @@ textarea::placeholder {
     }
     /*END Feature*/
 
+    /*START Contact*/
+    .contact {
+        margin-bottom: -60px;
+    }
+    /*END Contact*/
 }
 /*END Responsive ipad-pro*/
