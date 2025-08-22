@@ -43,12 +43,12 @@ searchInput.addEventListener("click", (e) => {
 var swiperBanner = new Swiper(".JS-banner", {
     spaceBetween: 30,
     centeredSlides: true,
-    /*
+    
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
-    */
+    
     pagination: {
         el: ".swiper-pagination1",
         clickable: true,
@@ -163,16 +163,18 @@ var swiperFeedback = new Swiper(".JS-feedback", {
     spaceBetween: 0,
     slidesPerView: 3,
     loop:true,
+
     grid: {
         rows: 3,
         fill: "row"
     },
-    /*
+    
     autoplay: {
-        delay: 3000,
+        delay: 7000,
         disableOnInteraction: false,
+          reverseDirection: true,
     },
-    */
+    
     pagination: {
         el: ".swiper-pagination4",
         clickable: true,
