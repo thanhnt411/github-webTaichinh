@@ -43,12 +43,12 @@ searchInput.addEventListener("click", (e) => {
 var swiperBanner = new Swiper(".JS-banner", {
     spaceBetween: 30,
     centeredSlides: true,
-
+    
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
-    
+
     pagination: {
         el: ".swiper-pagination1",
         clickable: true,
@@ -77,16 +77,12 @@ playVideo.addEventListener("ended",function() {
 //START training,feedback,partners
 var swiperTraining = new Swiper(".JS-training", {
     spaceBetween: 30,
-    centeredSlides: true,
     loop: true,
+    freeMode: true,
+    watchSlidesProgress: true,
     slidesPerView: 4,          
     slidesPerGroup: 1,
     
-    autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-    },
-
     navigation: {
         nextEl: ".swiper-button-next3",
         prevEl: ".swiper-button-prev3",
@@ -98,8 +94,30 @@ var swiperTraining = new Swiper(".JS-training", {
         },
 
         768: { //từ 768 trở lên
-            slidesPerView: 4
+            slidesPerView: 3
         },
+
+        1024: {
+            slidesPerView: 4
+        }
+    }
+});
+
+var swiperTraining2 = new Swiper(".JS-training2", {
+    spaceBetween: 30,
+    thumbs: {
+        swiper: swiperTraining,
+    },
+
+    breakpoints: {
+        0: { //từ 0 trở lên
+            slidesPerView: 1
+        },
+
+        768: { //từ 768 trở lên
+            slidesPerView: 1
+        },
+
     }
 });
 
@@ -111,7 +129,7 @@ var swiperFeedback = new Swiper(".JS-feedback", {
     loop: true,
     
     autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
     },
     
@@ -131,8 +149,12 @@ var swiperFeedback = new Swiper(".JS-feedback", {
         },
 
         768: { //từ 768 trở lên
-            slidesPerView: 3
+            slidesPerView: 2
         },
+
+        1024: {
+            slidesPerView: 3
+        }
     }
 
 });
@@ -140,15 +162,17 @@ var swiperFeedback = new Swiper(".JS-feedback", {
  var swiperPartners = new Swiper(".JS-partners", {
     spaceBetween: 0,
     slidesPerView: 3,
+    loop:true,
     grid: {
         rows: 3,
+        fill: "row"
     },
-    
+    /*
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
-
+    */
     pagination: {
         el: ".swiper-pagination4",
         clickable: true,
@@ -160,6 +184,33 @@ var swiperFeedback = new Swiper(".JS-feedback", {
     },
 });
 //END training,feedback,partners
+
+//START feature
+var swiperFeature = new Swiper(".JS-feature", {
+    spaceBetween: 30,
+    freeMode: true,
+    watchSlidesProgress: true,
+    slidesPerView: 4,          
+});
+
+var swiperFeature2 = new Swiper(".JS-feature2", {
+    spaceBetween: 30,
+    slidesPerView:1,
+    thumbs: {
+        swiper: swiperFeature,
+    },
+
+    breakpoints: {
+        0: { //từ 0 trở lên
+            slidesPerView: 1
+        },
+
+        768: { //từ 768 trở lên
+            slidesPerView: 1
+        },
+    }
+});
+//END feature
 
 //START Back to top
 const backToTop = document.getElementById("backToTop");
